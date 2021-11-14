@@ -202,3 +202,33 @@ nav {
     text-align:justify;
     margin-top: -15px;
 }
+
+.why-us-box{
+    margin-top: 30px;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #fff;
+    background-color: #F4EAD9;
+    -webkit-box-shadow: 0 0 30px 12px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0 0 30px 12px rgba(0,0,0,0.30);
+    box-shadow: 0 0 30px 12px rgba(0,0,0,0.30);
+}
+
+.why-us-heading{
+    font-size: 28px;
+    color: #615646;
+    text-align: center;
+}
+
+.why-us-paragraph{
+    margin-top: 20px;
+    font-size: 18px;
+    color: #615646;
+    text-align: justify;
+}
+
+.couple-img{
+    margin-left: -100px;
+    margin-bottom: -8px;
+    width: 90%;
+}
