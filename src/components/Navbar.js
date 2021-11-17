@@ -41,13 +41,13 @@ function Navbar(){
                 <a className="nav-link" id="link-1" href="/">Home &middot;</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" id="link-2" href="/#about">About &middot;</a>
+                <a className="nav-link" id="link-2" href="/#about" onClick={()=>{window.scroll(0,0)}}>About &middot;</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" id="link-3" href="/testimonials">Te$timonial$ &middot;</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" id="link-4" href="/#whyus">Why U$ &middot;</a>
+                <a className="nav-link" id="link-4" href="/#why" onClick={()=>{window.scroll(0,700)}}>Why U$ &middot;</a>
               </li>
               <li className="nav-item ">
                 <a className="nav-link" id="link-6" href="/team">Team &middot;</a>

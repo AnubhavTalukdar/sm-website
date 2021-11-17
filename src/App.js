@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <Router>
         <Homepage path="/" />
+        <Homepage path="*" />
       </Router>
     </div>
   );
