@@ -15,7 +15,7 @@ function WhyUs(){
             <div className="col-6">
                 <div className="why-us-box container-fluid">
                     <h4 className="why-us-heading">WHY US?</h4>
-                    <p className="why-us-paragraph">Etiam in orci vulputate, lobortis mauris sed, condimentum ante. Phasellus sit amet nisl turpis. Nullam porta tempus nunc, ut vestibulum augue lacinia vel. Aliquam vitae leo ut elit consequat pellentesque. Aenean at risus finibus, imperdiet nulla a, scelerisque est. Vestibulum lobortis sed quam at convallis. Morbi fermentum placerat mauris id luctus.</p>
+                    <p className="why-us-paragraph">Delilah in orci vulputate, lobortis mauris sed, condimentum ante. Phasellus sit amet nisl turpis. Nullam porta tempus nunc, ut vestibulum augue lacinia vel. Aliquam vitae leo ut elit consequat pellentesque. Aenean at risus finibus, imperdiet nulla a, scelerisque est. Vestibulum lobortis sed quam at convallis. Morbi fermentum placerat mauris id luctus.</p>
                 </div>
                 
             </div>
