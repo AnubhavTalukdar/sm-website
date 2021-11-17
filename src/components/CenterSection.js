@@ -12,7 +12,7 @@ import marginbottom from "../assets/img/marginbottom.png"
 function CenterSection(){
     return(
         <>
-        <div className="center-section py-5 container-fluid justify-content-center bg-newspaper">
+        <div className="center-section py-5 container-fluid justify-content-center bg-newspaper" id="about">
             <div className="box">
                 <div className="boxBtm">
                 <div className="box1">
@@ -43,7 +43,7 @@ function CenterSection(){
                             <img src={bottomright} alt="bottomright" width="100%" />
                         </div>
                     </div>
-                    <div className="container-fluid text-center mt-5">
+                    <div className="container-fluid text-center mt-5" id="whyus">
                         <img src={divider} alt="divider-1" width="40%" />
                     </div>
                     </div>
