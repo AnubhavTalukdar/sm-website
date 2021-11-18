@@ -11,7 +11,7 @@ function Blog(){
                 <div className="blog-card">
                     <h6 className="blog-heading">HEADING</h6>
                     <h6 className="blog-date">DATE: 21-04-2021</h6>
-                    <img src={blogimg} className="blog-img mt-3" />
+                    <img src={blogimg} className="blog-img mt-3" alt="blog-1"/>
                     <p className="blog-summary mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque nunc vel risus rhoncus, a sagittis dolor fermentum. Sed feugiat viverra libero sed semper. Nunc mauris lectus, auctor at vestibulum nec, dictum nec nunc. Nullam sit amet sapien mollis, rhoncus nunc in, hendrerit nulla. Etiam risus lacus, aliquet a pulvinar eu, pretium in velit. Quisque at tristique odio. Sed iaculis est neque, sed volutpat orci commodo vel. Aliquam erat volutpat. Etiam dignissim felis venenatis velit suscipit, non suscipit neque iaculis</p>
                     <h6 className="blog-tags">#tags</h6>
                     <div className="blog-brown1" />
@@ -22,7 +22,7 @@ function Blog(){
                 <div className="blog-card">
                     <h6 className="blog-heading">HEADING</h6>
                     <h6 className="blog-date">DATE: 21-04-2021</h6>
-                    <img src={blogimg} className="blog-img mt-3" />
+                    <img src={blogimg} className="blog-img mt-3" alt="blog-2"/>
                     <p className="blog-summary mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque nunc vel risus rhoncus, a sagittis dolor fermentum. Sed feugiat viverra libero sed semper. Nunc mauris lectus, auctor at vestibulum nec, dictum nec nunc. Nullam sit amet sapien mollis, rhoncus nunc in, hendrerit nulla. Etiam risus lacus, aliquet a pulvinar eu, pretium in velit. Quisque at tristique odio. Sed iaculis est neque, sed volutpat orci commodo vel. Aliquam erat volutpat. Etiam dignissim felis venenatis velit suscipit, non suscipit neque iaculis</p>
                     <h6 className="blog-tags">#tags</h6>
                     <div className="blog-brown1" />
@@ -33,7 +33,7 @@ function Blog(){
                 <div className="blog-card">
                     <h6 className="blog-heading">HEADING</h6>
                     <h6 className="blog-date">DATE: 21-04-2021</h6>
-                    <img src={blogimg} className="blog-img mt-3" />
+                    <img src={blogimg} className="blog-img mt-3" alt="blog-3"/>
                     <p className="blog-summary mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque nunc vel risus rhoncus, a sagittis dolor fermentum. Sed feugiat viverra libero sed semper. Nunc mauris lectus, auctor at vestibulum nec, dictum nec nunc. Nullam sit amet sapien mollis, rhoncus nunc in, hendrerit nulla. Etiam risus lacus, aliquet a pulvinar eu, pretium in velit. Quisque at tristique odio. Sed iaculis est neque, sed volutpat orci commodo vel. Aliquam erat volutpat. Etiam dignissim felis venenatis velit suscipit, non suscipit neque iaculis</p>                
                     <h6 className="blog-tags">#tags</h6>
                     <div className="blog-brown1" />
