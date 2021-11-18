@@ -2,6 +2,7 @@
 import React from "react";
 import AboutUs from "./AboutUs"
 import WhyUs from "./WhyUs"
+import Blog from "./Blog"
 
 function CenterSection(){
     return(
@@ -13,6 +14,7 @@ function CenterSection(){
                     <div className="box1Btm">
                         <AboutUs />
                         <WhyUs />
+                        <Blog />
                     </div>
                 </div>
                 </div> 

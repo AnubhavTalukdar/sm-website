@@ -53,7 +53,7 @@ function Navbar(){
                 <a className="nav-link" id="link-6" href="/team">Team &middot;</a>
               </li>
               <li className="nav-item pr-2">
-                <a className="nav-link" id="link-7" href="/blog">Blog &middot;</a>
+                <a className="nav-link" id="link-7" href="/#blog" onClick={()=>{window.scroll(0,1600)}}>Blog &middot;</a>
               </li>
               <li className="nav-item pr-2">
                 <a className="nav-link" id="link-8" href="/contactus">Contact U$ </a>
