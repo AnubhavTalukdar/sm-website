@@ -5,6 +5,7 @@ import blogimg from "../assets/img/blogimg.jpg";
 function Blog(){
     return(
         <>
+        
         <h4 className="our-blog-heading mb-4">BLOGS</h4>
         <div className="blog row">
             <div className="col-4">
