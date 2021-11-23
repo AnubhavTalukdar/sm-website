@@ -4,6 +4,7 @@ import AboutUs from "./AboutUs"
 import WhyUs from "./WhyUs"
 import Blog from "./Blog"
 import Testimonials from "./Testimonials"
+import Teams from "./Teams"
 
 function CenterSection(){
     return(
@@ -16,6 +17,7 @@ function CenterSection(){
                         <AboutUs />
                         <Testimonials />
                         <WhyUs />
+                        <Teams />
                         <Blog />
                     </div>
                 </div>

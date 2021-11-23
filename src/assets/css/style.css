@@ -497,7 +497,7 @@ nav {
 .details span{
     color: #615646;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 14px; 
 }
 
 .testimonials-background{
@@ -510,7 +510,7 @@ nav {
 .dialer{
   width: 7%;
   left: 668px;
-  bottom: 2095px;
+  bottom: 2609px;
   position: absolute;
 }
 
@@ -525,4 +525,193 @@ nav {
   to {
     transform: rotate(359deg);
   }
+}
+
+/*Teams*/
+.team-heading {
+    font-size: 28px;
+    color: #615646;
+    text-align: center;
+}
+
+.book{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+input {
+  display: none;
+}
+
+.flip-img{
+  display: flex;
+  width:300px;
+  height:300px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+#cover {
+  width:300px;
+  height:300px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.cover-img{
+  width:300px;
+  height:300px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+
+.flip-book{
+  width: 300px;
+  height: 300px;
+  position: relative;
+  perspective: 1500px;
+}
+
+.flip{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: left;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: .5s;
+  color: #000;
+}
+
+.flip-para{
+  font-size: 14px;
+  line-height: 24px;
+  text-align: justify;
+  font-style: italic;
+  background-color: rgb(97,86,70,0.40);
+  padding: 8px;
+}
+
+.front{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #EBDBB9;
+  box-sizing: border-box;
+  padding: 0 13px;
+  box-shadow: inset 20px 0 50px rgba(0,0,0,0.5) 0 2px 5px rgba(0,0,0,0.5);
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+
+}
+
+.back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  background-color: #EBDBB9;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+
+}
+
+.next-btn {
+  position: absolute;
+  bottom: 13px;
+  right: 13px;
+  cursor: pointer;
+  color: #000;
+}
+
+.back-btn{
+  position: absolute;
+  bottom: 13px;
+  right: 13px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#p1{
+  z-index: 3;
+}
+
+#p2{
+  z-index: 2;
+}
+
+#p3{
+  z-index: 1;
+}
+
+#c1:checked ~ .flip-book #p1{
+  transform: rotateY(-180deg);
+  z-index: 1;
+}
+
+#c2:checked ~ .flip-book #p2{
+  transform: rotateY(-180deg);
+  z-index: 2;
+}
+
+#c3:checked ~ .flip-book #p3{
+  transform: rotateY(-180deg);
+  z-index: 3;
+}
+
+.flip-heading{
+    font-size: 24px;
+    text-align: center;
+    color: #615646;
+    border-top: 1px solid #615646;
+    border-bottom: 1px solid #615646;
+    margin-top: 15px;
+    padding: 5px;
+}
+
+.flip-name{
+    font-size: 18px;
+    text-align: center;
+    color: #615646;
+    padding: 5px;
+}
+
+.flip-border1{
+  height: 5px;
+  background-color: #615646;
+  margin-top: -3px;
+  margin-bottom: 3px;
+}
+
+.flip-border2{
+  height: 2px;
+  background-color: #615646;
+  margin-bottom: 3px;
+}
+
+.flip-border3{
+  height: 2px;
+  background-color: #615646;
+  margin-bottom: 3px;
+  margin-top: -5px;
+}
+
+.flip-ending {
+  font-size: 24px;
+    text-align: center;
+    color: #615646;
+    padding: 5px;
+    transform: skewY(-6deg);
+    margin-top: 130px;
 }
