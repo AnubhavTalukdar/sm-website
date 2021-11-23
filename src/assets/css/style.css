@@ -372,3 +372,157 @@ nav {
     transform: scaleY(0);
   }
   
+
+/*Testimonials*/
+.testimonials-heading{
+    font-size: 28px;
+    color: #615646;
+    text-align: center;
+}
+
+.testimonials {
+    margin-left: 20px;
+}
+.wrapper {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.wrapper .outer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  .wrapper .card{
+    background: #F7CC7E;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    justify-content: space-between;
+    border-radius: 12px;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    animation: animate 15s linear infinite;
+    animation-delay: calc(3s * var(--delay));
+  }
+  .outer:hover .card{
+    animation-play-state: paused;
+  }
+  .wrapper .card:last-child{
+    animation-delay: calc(-3s * var(--delay));
+  }
+  @keyframes animate {
+    0%{
+      opacity: 0;
+      transform: translateY(100%) scale(0.5);
+    }
+    5%, 20%{
+      opacity: 0.4;
+      transform: translateY(100%) scale(0.7);
+    }
+    25%, 40%{
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0%) scale(1);
+    }
+    45%, 60%{
+      opacity: 0.4;
+      transform: translateY(-100%) scale(0.7);
+    }
+    65%, 100%{
+      opacity: 0;
+      transform: translateY(-100%) scale(0.5);
+    }
+  }
+  .card .content{
+    display: flex;
+    align-items: center;
+  }
+  .wrapper .card .img{
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    left: 8px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+  }
+  .card .img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .card .details{
+    margin-left: 90px;
+  }
+  .details span{
+    font-weight: 600;
+    font-size: 14px;
+    color: #615646;
+  }
+
+  .testimonial{
+    font-size: 13px;
+    font-style: italic;
+    color: #615646;
+  }
+ 
+
+.card .img {
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    left: 8px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2)
+}
+
+.card .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card .details{
+    margin-left: 90px;
+}
+
+.details span{
+    color: #615646;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.testimonials-background{
+  width: 100%;
+  margin-left: -15px;
+  top: 0;
+  left:0;
+}
+
+.dialer{
+  width: 7%;
+  left: 668px;
+  bottom: 2095px;
+  position: absolute;
+}
+
+.rotate{
+  animation: rotation 6s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

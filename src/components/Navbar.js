@@ -44,19 +44,19 @@ function Navbar(){
                 <a className="nav-link" id="link-2" href="/#about" onClick={()=>{window.scroll(0,0)}}>About &middot;</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" id="link-3" href="/testimonials">Te$timonial$ &middot;</a>
+                <a className="nav-link" id="link-3" href="/#testimonials" onClick={()=>{window.scroll(0,800)}}>Te$timonial$ &middot;</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" id="link-4" href="/#why" onClick={()=>{window.scroll(0,700)}}>Why U$ &middot;</a>
+                <a className="nav-link" id="link-4" href="/#why" onClick={()=>{window.scroll(0,1500)}}>Why U$ &middot;</a>
               </li>
               <li className="nav-item ">
-                <a className="nav-link" id="link-6" href="/team">Team &middot;</a>
+                <a className="nav-link" id="link-6" href="/">Team &middot;</a>
               </li>
               <li className="nav-item pr-2">
                 <a className="nav-link" id="link-7" href="/#blog" onClick={()=>{window.scroll(0,1600)}}>Blog &middot;</a>
               </li>
               <li className="nav-item pr-2">
-                <a className="nav-link" id="link-8" href="/contactus">Contact U$ </a>
+                <a className="nav-link" id="link-8" href="/">Contact U$ </a>
               </li>
               <li className="nav-right">
                 <img src={rightarrow} alt="leftarrow" width="80%" />
