@@ -499,23 +499,21 @@ nav {
     font-weight: 600;
     font-size: 14px; 
 }
+.testimonials-margin-bottom{
+  margin-top: -2%;
+}
 
-.testimonials-background{
+.testimonials-bg{
   width: 100%;
-  margin-left: -15px;
-  top: 0;
-  left:0;
 }
 
 .dialer{
-  width: 7%;
-  left: 668px;
-  bottom: 2609px;
-  position: absolute;
+  width: 19%;
+  margin-top: -44%;
 }
 
 .rotate{
-  animation: rotation 6s infinite linear;
+  animation: rotation 24s infinite linear;
 }
 
 @keyframes rotation {

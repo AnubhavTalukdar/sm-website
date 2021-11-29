@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import teammember from "../assets/img/TeamMember.jpg";
-import background from "../assets/img/background_testimonials.png";
+import telephone from "../assets/img/telephone.png"
 import dialer from "../assets/img/dialer.png";
 import divider from "../assets/img/divider.png";
 import marginbottom from "../assets/img/marginbottom.png"
@@ -10,7 +10,7 @@ function Testimonials(){
     return(
         <>
         <h4 className="testimonials-heading">TESTIMONIALS</h4>
-        <div className="testimonials row">
+        <div className="testimonials row justify-content-center">
             <div className="col-3 pt-5">
             <div className="wrapper">
                 <div className="outer">
@@ -62,18 +62,17 @@ function Testimonials(){
                 </div>
             </div>
             </div>
-            <div className="col-9">
-    
-                <img className="testimonials-background" src={background} alt="testimonials-background" />
+            <div className="col-8 text-center">
+                <img className="testimonials-bg" src={telephone} alt="telephone" />
                 <img className="dialer rotate" src={dialer} alt="dialer" />
-                
             </div>
         </div>
-        <div className="why-us row">
+        <div className="testimonials-margin-bottom row">
             <div className="col-12">
                 <img src={marginbottom} alt="margin-bottom" width="100%" />
             </div>
         </div>
+        
         <div className="container-fluid text-center mt-5">
             <img src={divider} alt="divider-2" width="40%" />
         </div>
