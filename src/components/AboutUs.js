@@ -6,6 +6,7 @@ import bottomright from "../assets/img/bottomright.png";
 import bottomleft from "../assets/img/bottomleft.png";
 import divider from "../assets/img/divider.png";
 
+
 function AboutUs(){
     return(
         <>
