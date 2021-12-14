@@ -7,7 +7,7 @@ import marginbottom from "../assets/img/marginbottom.png"
 
 function WhyUs(){
     return(
-        <>
+        <div className="px-3">
         <div className="why-us row">
             <div className="col-3">
                 <img src={questionmark} alt="question-mark" width="140%" />
@@ -33,7 +33,7 @@ function WhyUs(){
         </div>
         <br/>
         <br />
-        </>
+        </div>
     );
 }
 

@@ -4,7 +4,7 @@ import blogimg from "../assets/img/blogimg.jpg";
 
 function Blog(){
     return(
-        <>
+        <div className="px-3">
         
         <h4 className="our-blog-heading mb-4">BLOGS</h4>
         <div className="blog row">
@@ -58,7 +58,7 @@ function Blog(){
         </div>
         <br />
         <br />
-        </>
+        </div>
     );
 }
 

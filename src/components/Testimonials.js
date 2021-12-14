@@ -8,7 +8,7 @@ import marginbottom from "../assets/img/marginbottom.png"
 
 function Testimonials(){
     return(
-        <>
+        <div className="px-3">
         <h4 className="testimonials-heading">TESTIMONIALS</h4>
         <div className="testimonials row justify-content-center">
             <div className="col-3 pt-5">
@@ -78,7 +78,7 @@ function Testimonials(){
         </div>
         <br/>
         <br />
-        </>
+        </div>
     );
 }
 

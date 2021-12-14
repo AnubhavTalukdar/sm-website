@@ -121,7 +121,7 @@ nav {
 .box1 {
     background: #F4EAD9;
     width: 100%;
-    padding: 20px;
+    padding: 0px;
     position: relative;
     overflow: hidden;
 
@@ -171,12 +171,29 @@ nav {
     height: 20px;
     border-radius: 20px;
 }
+
+.box-top-border{
+  background: #5E3A16;
+  height: 10px;
+}
+
+.box2{
+  background: #835E40;
+}
+
+.footer-text{
+    font-family: furgatorio !important;
+    font-size: 25px !important;
+    font-weight: lighter;
+    color: white !important;
+}
+
 .about-us {
     padding: 10px;
     border: 1px solid #fff;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 25px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 45px;
     border-radius: 15px;
     box-shadow: -11px -6px 28px 4px rgba(0,0,0,0.75);
     -webkit-box-shadow: -11px -6px 28px 4px rgba(0,0,0,0.75);
@@ -381,7 +398,7 @@ nav {
 }
 
 .testimonials {
-    margin-left: 20px;
+    margin-left: 30px;
 }
 .wrapper {
     margin-top: 200px;

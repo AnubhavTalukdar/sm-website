@@ -5,7 +5,7 @@ import divider from "../assets/img/divider.png";
 
 function Teams(){
     return(
-        <>
+        <div className="px-3">
         <h4 className="team-heading mb-4">TEAM</h4>
         <div className="team row pt-4">
             <div className="col-12 text-center">
@@ -71,7 +71,7 @@ function Teams(){
         </div>
         <br/>
         <br />
-        </>
+        </div>
     );
 }
 

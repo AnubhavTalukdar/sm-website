@@ -56,7 +56,7 @@ function Navbar(){
                 <a className="nav-link" id="link-7" href="/#blog" onClick={()=>{window.scroll(0,3000)}}>Blog &middot;</a>
               </li>
               <li className="nav-item pr-2">
-                <a className="nav-link" id="link-8" href="/">Contact U$ </a>
+                <a className="nav-link" id="link-8" href="/#contactus" onClick={()=>{window.scrollTo(0,document.body.scrollHeight)}}>Contact U$ </a>
               </li>
               <li className="nav-right">
                 <img src={rightarrow} alt="leftarrow" width="80%" />
