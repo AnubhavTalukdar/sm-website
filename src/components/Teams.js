@@ -13,7 +13,7 @@ function Teams(){
                     <input type="checkbox" id="c1" />
                     <input type="checkbox" id="c2" />
                     <input type="checkbox" id="c3" />
-                    <div id="cover"><img className="cover-img" src={teammember} alt=""/></div>
+                    <div id="cover"></div>
                     <div className="flip-book">
                         <div className="flip" id="p1">
                             <div className="back">
@@ -21,12 +21,7 @@ function Teams(){
                                 <label className="back-btn" for="c1">Back</label>
                             </div>
                             <div className="front">
-                                <h2 className="flip-heading">OUR TEAM</h2>
-                                <div className="flip-border1"></div>
-                                <div className="flip-border2"></div>
-                                <h2 className="flip-name">ALEX LIM</h2>
-                                <p className="flip-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis ipsum sed erat dignissim elementum quis non nisl. Morbi dui augue, ultrices non sollicitudin id, commodo non sem.</p>
-                                <div className="flip-border3"></div>
+                                <h2 className="flip-starting">HAVE A LOOK INTO OUR TEAM! </h2>
                                 <label className="next-btn" for="c1">Next</label>
                             </div>
                         </div>

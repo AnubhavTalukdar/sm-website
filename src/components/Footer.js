@@ -3,6 +3,7 @@ import React from "react";
 import phoneicon from "../assets/img/phoneicon.png";
 import emailicon from "../assets/img/emailicon.png";
 import legalicon from "../assets/img/legalicon.png";
+import logo from "../assets/img/logo.png"
 
 function Footer() {
     return(
@@ -32,7 +33,8 @@ function Footer() {
             </div>
             <div className="row pb-4">
                 <div className="col-12 text-center">
-                    <h6 className="footer-text">THE $TOCK mENTOR: MADE IN INDIA, FOR THE WORLD.<br />All Rights Reserved.</h6>
+                    <img src={logo} width="8%" alt=""/>
+                    <h6 className="footer-text mt-2">THE $TOCK mENTOR: MADE IN INDIA, FOR THE WORLD.<br />All Rights Reserved.</h6>
                 </div>
             </div>
         </div>

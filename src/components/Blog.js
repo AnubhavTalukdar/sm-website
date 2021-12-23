@@ -45,11 +45,13 @@ function Blog(){
         <div className="row justify-content-center mt-3 mb-2">
             <div className="col-4">
                 <center>
+                <a href="/blogs" style={{textDecoration: "none"}} target="_blank" rel="noopener noreferrer">
                 <button className="button">
                     Show More
                     <div className="button__horizontal"></div>
                     <div className="button__vertical"></div>
                 </button>
+                </a>
                 </center>
             </div>
         </div>
