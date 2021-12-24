@@ -38,7 +38,7 @@ function Navbar(){
                 <img classname="mt-3" src={leftarrow} alt="leftarrow" width="80%" />
               </li>
               <li className="nav-item">
-                <a className="nav-link" id="link-1" href="/">Home &middot;</a>
+                <a className="nav-link" id="link-1" href="/">Home</a>
               </li>
               <li className="nav-right">
                 <img src={rightarrow} alt="leftarrow" width="80%" />

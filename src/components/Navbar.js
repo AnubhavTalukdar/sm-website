@@ -50,10 +50,10 @@ function Navbar(){
                 <a className="nav-link" id="link-4" href="/#why" onClick={()=>{window.scroll(0,1500)}}>Why U$ &middot;</a>
               </li>
               <li className="nav-item ">
-                <a className="nav-link" id="link-6" href="/#team" onClick={()=>{window.scroll(0,2500)}}>Team &middot;</a>
+                <a className="nav-link" id="link-6" href="/#team" onClick={()=>{window.scroll(0,2250)}}>Team &middot;</a>
               </li>
               <li className="nav-item pr-2">
-                <a className="nav-link" id="link-7" href="/#blog" onClick={()=>{window.scroll(0,3000)}}>Blog &middot;</a>
+                <a className="nav-link" id="link-7" href="/#blog" onClick={()=>{window.scroll(0,2800)}}>Blog &middot;</a>
               </li>
               <li className="nav-item pr-2">
                 <a className="nav-link" id="link-8" href="/#contactus" onClick={()=>{window.scrollTo(0,document.body.scrollHeight)}}>Contact U$ </a>

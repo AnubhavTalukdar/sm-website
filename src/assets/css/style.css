@@ -245,10 +245,30 @@ nav {
     text-align: justify;
 }
 
-.couple-img{
-    margin-left: -100px;
-    margin-bottom: -8px;
-    width: 90%;
+.billboard-img {
+    width: 60%;
+}
+
+.img-container{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.billboard-writing1{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.billboard-writing2{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.billboard-points{
+    font-size: 16px;
+    color: #615646;
 }
 
 .our-blog-heading {
@@ -845,7 +865,7 @@ input {
 .arrow-right {
   width: 0; 
   height: 0; 
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-left: 15px solid #615646;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #615646;
 }
