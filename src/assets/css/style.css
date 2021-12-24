@@ -3,6 +3,14 @@
     src: url(Furgatorio.ttf);
   }
 
+@font-face {
+   font-family: JosefinSans;
+   src: url(JosefinSans.ttf);
+}
+
+body{
+    font-family: JosefinSans;
+}
 .bg-newspaper {
   background: url("../img/background.png") no-repeat center center fixed; 
   -webkit-background-size: cover;
