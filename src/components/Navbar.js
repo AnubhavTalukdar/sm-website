@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, {useEffect} from "react";
 import left from "../assets/img/left.png"
 import right from "../assets/img/right.png"
 import bar from "../assets/img/bar.png"
@@ -8,6 +8,36 @@ import leftarrow from "../assets/img/leftarrow.png"
 import rightarrow from "../assets/img/rightarrow.png"
 
 function Navbar(){
+
+  useEffect(() => { 
+    
+    
+    if(window.location.href.split("#")[1] === "about"){
+      window.scroll(0,0)
+    }
+
+    else if(window.location.href.split("#")[1] === "testimonials"){
+      window.scroll(0,800)
+    }
+
+    else if(window.location.href.split("#")[1] === "why"){
+      window.scroll(0,1500)
+    }
+   
+    else if(window.location.href.split("#")[1] === "team"){
+      window.scroll(0,2250)
+    }
+    
+    else if(window.location.href.split("#")[1] === "blog"){
+      window.scroll(0,2800)
+    }
+
+    else if(window.location.href.split("#")[1] === "contactus"){
+      window.scrollTo(0,document.body.scrollHeight)
+    }
+
+}, [])
+
     return(
         <>
         <div className="black-bar container-fluid px-0 text-center">
