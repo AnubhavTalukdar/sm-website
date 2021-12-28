@@ -10,26 +10,26 @@ import rightarrow from "../assets/img/rightarrow.png"
 function Navbar(){
 
   useEffect(() => { 
-    
+    console.log(window.screen.width)
     
     if(window.location.href.split("#")[1] === "about"){
       window.scroll(0,0)
     }
 
     else if(window.location.href.split("#")[1] === "testimonials"){
-      window.scroll(0,800)
+      if(window.screen.width < 600){window.scroll(0,1400)} else {window.scroll(0,800)}
     }
 
     else if(window.location.href.split("#")[1] === "why"){
-      window.scroll(0,1500)
+      if(window.screen.width < 600){window.scroll(0,2000)} else {window.scroll(0,1500)}
     }
    
     else if(window.location.href.split("#")[1] === "team"){
-      window.scroll(0,2250)
+      if(window.screen.width < 600){window.scroll(0,2500)} else {window.scroll(0,2250)}
     }
     
     else if(window.location.href.split("#")[1] === "blog"){
-      window.scroll(0,2800)
+      if(window.screen.width < 600){window.scroll(0,3000)} else {window.scroll(0,2800)}
     }
 
     else if(window.location.href.split("#")[1] === "contactus"){
@@ -59,31 +59,33 @@ function Navbar(){
         </div>
         <nav className="navbar navbar-expand-lg sticky-top navbar-light border-dark" style={{backgroundColor : "#F4EAD9"}}>
         <div className="container-fluid">
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
+                <a className="navbar-brand mx-0" href="/"><img src={title} alt="logo" className="nav-logo" /></a>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+           
             <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav mx-auto pr-3">
               <li className="nav-left">
                 <img classname="mt-3" src={leftarrow} alt="leftarrow" width="80%" />
               </li>
               <li className="nav-item">
-                <a className="nav-link" id="link-1" href="/">Home &middot;</a>
+                <a className="nav-link" id="link-1" href="/">Home <span className="nav-dot">&middot;</span></a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" id="link-2" href="/#about" onClick={()=>{window.scroll(0,0)}}>About &middot;</a>
+                <a className="nav-link" id="link-2" href="/#about" onClick={()=>{window.scroll(0,0)}}>About <span className="nav-dot">&middot;</span></a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" id="link-3" href="/#testimonials" onClick={()=>{window.scroll(0,800)}}>Te$timonial$ &middot;</a>
+                <a className="nav-link" id="link-3" href="/#testimonials" onClick={()=>{if(window.screen.width < 600){window.scroll(0,1400)} else {window.scroll(0,800)}}}>Te$timonial$ <span className="nav-dot">&middot;</span></a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" id="link-4" href="/#why" onClick={()=>{window.scroll(0,1500)}}>Why U$ &middot;</a>
+                <a className="nav-link" id="link-4" href="/#why" onClick={()=>{if(window.screen.width < 600){window.scroll(0,2000)} else {window.scroll(0,1500)}}}>Why U$ <span className="nav-dot">&middot;</span></a>
               </li>
               <li className="nav-item ">
-                <a className="nav-link" id="link-6" href="/#team" onClick={()=>{window.scroll(0,2250)}}>Team &middot;</a>
+                <a className="nav-link" id="link-6" href="/#team" onClick={()=>{if(window.screen.width < 600){window.scroll(0,2500)} else {window.scroll(0,2250)}}}>Team <span className="nav-dot">&middot;</span></a>
               </li>
               <li className="nav-item pr-2">
-                <a className="nav-link" id="link-7" href="/#blog" onClick={()=>{window.scroll(0,2800)}}>Blog &middot;</a>
+                <a className="nav-link" id="link-7" href="/#blog" onClick={()=>{if(window.screen.width < 600){window.scroll(0,3000)} else {window.scroll(0,2800)}}}>Blog <span className="nav-dot">&middot;</span></a>
               </li>
               <li className="nav-item pr-2">
                 <a className="nav-link" id="link-8" href="/#contactus" onClick={()=>{window.scrollTo(0,document.body.scrollHeight)}}>Contact U$ </a>

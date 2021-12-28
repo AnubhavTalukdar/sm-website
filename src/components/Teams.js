@@ -36,7 +36,7 @@ function Teams(){
                                 <div className="flip-border1"></div>
                                 <div className="flip-border2"></div>
                                 <h2 className="flip-name">RODGER DAVID</h2>
-                                <p className="flip-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis ipsum sed erat dignissim elementum quis non nisl. Morbi dui augue, ultrices non sollicitudin id, commodo non sem.</p>
+                                <p className="flip-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis ipsum sed erat dignissim elementum quis non nisl.</p>
                                 <div className="flip-border3"></div>
                                 <label className="next-btn" for="c2">Next</label>
                             </div>
@@ -52,7 +52,7 @@ function Teams(){
                                 <div className="flip-border1"></div>
                                 <div className="flip-border2"></div>
                                 <h2 className="flip-name">JOHN DOE</h2>
-                                <p className="flip-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis ipsum sed erat dignissim elementum quis non nisl. Morbi dui augue, ultrices non sollicitudin id, commodo non sem.</p>
+                                <p className="flip-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis ipsum sed erat dignissim elementum quis non nisl.</p>
                                 <div className="flip-border3"></div>
                                 <label className="next-btn" for="c3">Next</label>
                             </div>

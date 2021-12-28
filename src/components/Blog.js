@@ -6,9 +6,9 @@ function Blog(){
     return(
         <div className="px-3">
         
-        <h4 className="our-blog-heading mb-4">BLOGS</h4>
+        <h4 className="our-blog-heading mb-lg-4 mb-md-4 mb-1">BLOGS</h4>
         <div className="blog row">
-            <div className="col-4">
+            <div className="col-lg-4 col-md-4 col-12 mt-lg-0 mt-md-0 mt-4">
                 <div className="blog-card">
                     <h6 className="blog-heading">HEADING</h6>
                     <h6 className="blog-date">DATE: 21-04-2021</h6>
@@ -19,7 +19,7 @@ function Blog(){
                     <div className="blog-brown2" />
                 </div>
             </div>
-            <div className="col-4">
+            <div className="col-lg-4 col-md-4 col-12 mt-lg-0 mt-md-0 mt-4">
                 <div className="blog-card">
                     <h6 className="blog-heading">HEADING</h6>
                     <h6 className="blog-date">DATE: 21-04-2021</h6>
@@ -30,7 +30,7 @@ function Blog(){
                     <div className="blog-brown2" />
                 </div>
             </div>
-            <div className="col-4">
+            <div className="col-lg-4 col-md-4 col-12 mt-lg-0 mt-md-0 mt-4">
                 <div className="blog-card">
                     <h6 className="blog-heading">HEADING</h6>
                     <h6 className="blog-date">DATE: 21-04-2021</h6>
@@ -43,7 +43,7 @@ function Blog(){
             </div>
         </div>
         <div className="row justify-content-center mt-3 mb-2">
-            <div className="col-4">
+            <div className="col-lg-4 col-md-4 col-8">
                 <center>
                 <a href="/blogs" style={{textDecoration: "none"}} target="_blank" rel="noopener noreferrer">
                 <button className="button">

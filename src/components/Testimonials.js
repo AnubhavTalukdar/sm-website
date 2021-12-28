@@ -11,7 +11,7 @@ function Testimonials(){
         <div className="px-3">
         <h4 className="testimonials-heading">TESTIMONIALS</h4>
         <div className="testimonials row justify-content-center">
-            <div className="col-3 pt-5">
+            <div className="col-lg-3 col-md-3 col-12 pt-5">
             <div className="wrapper">
                 <div className="outer">
                 <div className="card" style={{"--delay": -1}}>
@@ -62,7 +62,7 @@ function Testimonials(){
                 </div>
             </div>
             </div>
-            <div className="col-8 text-center">
+            <div className="col-lg-8 col-md-8 col-12 text-center">
                 <img className="testimonials-bg" src={telephone} alt="telephone" />
                 <img className="dialer rotate" src={dialer} alt="dialer" />
             </div>

@@ -8,7 +8,7 @@ function WhyUs(){
     return(
         <div className="px-3">
         <div className="why-us row">
-            <div className="col-12 text-center">
+            <div className="col-12 padding-remover">
                 <div class="img-container">
                     <img className="billboard-img" src={billboard} alt="" />
                     <div class="billboard-writing1">
@@ -17,19 +17,19 @@ function WhyUs(){
                     <div className="billboard-writing2">
                         <div className="d-flex mb-2">
                             <div className="arrow-right mt-auto mb-auto"></div>
-                            <span className="billboard-points">Lorem ipsum dolor sit amet, consectetur adipiscing.</span>
+                            <span className="billboard-points">Lorem ipsum dolor sit amet.</span>
                         </div>
                         <div className="d-flex mb-2">
                             <div className="arrow-right mt-auto mb-auto"></div>
-                            <span className="billboard-points">Lorem ipsum dolor sit amet, consectetur adipiscing.</span>
+                            <span className="billboard-points">Lorem ipsum dolor sit amet.</span>
                         </div>
                         <div className="d-flex mb-2">
                             <div className="arrow-right mt-auto mb-auto"></div>
-                            <span className="billboard-points">Lorem ipsum dolor sit amet, consectetur adipiscing.</span>
+                            <span className="billboard-points">Lorem ipsum dolor sit amet.</span>
                         </div>
                         <div className="d-flex mb-2">
                             <div className="arrow-right mt-auto mb-auto"></div>
-                            <span className="billboard-points">Lorem ipsum dolor sit amet, consectetur adipiscing.</span>
+                            <span className="billboard-points">Lorem ipsum dolor sit amet.</span>
                         </div>
                     </div>
                 </div>

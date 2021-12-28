@@ -25,7 +25,7 @@ function Blogs(){
                     <div className="box1Btm">
                     <h4 className="team-heading mt-3 mb-4">BLOGS</h4>
                     <div className="row px-4">
-                        <div className="col-8">
+                        <div className="col-lg-8 col-md-8 col-12">
                             <h4 className="our-blogs-heading pb-3">Our Blogs</h4>
                             <div className="row">
                                 <div className="col-12 mt-1">
@@ -240,7 +240,7 @@ function Blogs(){
                                 </div>
                                 <div className="col-12 mt-3">
                                 <div className="row justify-content-center mt-3 mb-2">
-                                    <div className="col-4">
+                                    <div className="col-lg-4 col-md-4 col-8">
                                         <center>
                                         <button className="button">
                                             Load More
@@ -253,7 +253,7 @@ function Blogs(){
                                 </div>
                             </div>
                         </div>
-                        <div className="col-4">
+                        <div className="col-lg-4 col-md-4 col-12 mt-lg-0 mt-md-0 mt-5">
                             <h4 className="atw-heading pb-1">Around the web</h4>
                             <div className="row px-2">
                                 <div className="col-12 atw-cards mt-3">
@@ -294,7 +294,7 @@ function Blogs(){
                                 </div>
                                 <div className="col-12 mt-2">
                                 <div className="row justify-content-center mt-3 mb-2">
-                                    <div className="col-6">
+                                    <div className="col-lg-6 col-md-6 col-8">
                                         <center>
                                         <button className="button">
                                             Load More
