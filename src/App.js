@@ -2,6 +2,7 @@ import "./assets/css/style.css"
 import { Router } from "@reach/router";
 import Homepage from "./routes/Homepage.js"
 import BlogsPage from "./routes/BlogsPage.js"
+import NotFoundPage  from "./routes/NotFoundPage";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Router>
         <Homepage path="/" />
         <BlogsPage path="/blogs" />
-        <Homepage path="*" />
+        <NotFoundPage path="*" />
       </Router>
     </div>
   );

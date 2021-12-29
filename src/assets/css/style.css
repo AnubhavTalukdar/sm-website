@@ -241,6 +241,12 @@ nav {
     color: white !important;
 }
 
+@media only screen and (max-width: 600px){
+  .footer-text{
+    font-size: 22px !important;
+  }
+}
+
 .about-us {
     padding: 10px;
     border: 1px solid #fff;
@@ -330,7 +336,7 @@ nav {
 }
 .billboard-writing2{
     position: absolute;
-    top: 35%;
+    top: 37%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -1070,6 +1076,7 @@ input {
 .footer-logo{
   width: 8%;
 }
+
 @media only screen and (max-width: 600px){
   .our-blogs-heading{
     font-size: 18px;
@@ -1099,4 +1106,17 @@ input {
   .footer-logo{
     width: 15%;
   } 
+}
+
+/*Not Found*/
+.not-found{
+  width: 50%;
+  margin: 20px;
+}
+
+@media only screen and (max-width: 600px){
+  .not-found{
+    width: 100%;
+    margin: 0px;
+  }
 }

@@ -15,19 +15,19 @@ function WhyUs(){
                         <h4 className="why-us-heading">WHY US?</h4>
                     </div>
                     <div className="billboard-writing2">
-                        <div className="d-flex mb-2">
+                        <div className="d-flex mb-lg-2 mb-md-2 mb-1">
                             <div className="arrow-right mt-auto mb-auto"></div>
                             <span className="billboard-points">Lorem ipsum dolor sit amet.</span>
                         </div>
-                        <div className="d-flex mb-2">
+                        <div className="d-flex mb-lg-2 mb-md-2 mb-1">
                             <div className="arrow-right mt-auto mb-auto"></div>
                             <span className="billboard-points">Lorem ipsum dolor sit amet.</span>
                         </div>
-                        <div className="d-flex mb-2">
+                        <div className="d-flex mb-lg-2 mb-md-2 mb-1">
                             <div className="arrow-right mt-auto mb-auto"></div>
                             <span className="billboard-points">Lorem ipsum dolor sit amet.</span>
                         </div>
-                        <div className="d-flex mb-2">
+                        <div className="d-flex mb-lg-2 mb-md-2 mb-1">
                             <div className="arrow-right mt-auto mb-auto"></div>
                             <span className="billboard-points">Lorem ipsum dolor sit amet.</span>
                         </div>
