@@ -658,7 +658,17 @@ nav {
   margin-top: -44%;
 }
 
+
+@keyframes rotation {
+  0%, 11%, 22%, 33%, 44% { transform: rotate(0deg); }
+  55%, 66%, 77%, 88%, 100% { transform: rotate(40deg); }
+}
 .rotate{
+-webkit-animation: rotation 3s infinite linear;
+animation: rotation 3s infinite linear;
+}
+
+/*.rotate{
   animation: rotation 24s infinite linear;
 }
 
@@ -670,7 +680,7 @@ nav {
     transform: rotate(359deg);
   }
 }
-
+*/
 @media only screen and (max-width: 600px) {
   .testimonials{
     margin-left: -15px !important;
@@ -1120,3 +1130,23 @@ input {
     margin: 0px;
   }
 }
+
+/*MIUI Styles*/
+.css-9npbnl-MuiFormLabel-root-MuiInputLabel-root{
+  font-family: JosefinSans !important;
+  font-size: 14px !important;
+  color: #615646 !important;
+}
+
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root{
+  font-family: JosefinSans !important;
+  font-size: 14px !important;
+  color: #615646 !important;
+}
+
+.css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input{
+  font-family: JosefinSans !important;
+  font-size: 14px !important;
+  color: #615646 !important;
+}
+

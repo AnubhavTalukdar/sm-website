@@ -1,46 +1,46 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import React, {useState, useEffect} from "react";
 import divider from "../assets/img/divider.png";
-import blogimg from "../assets/img/blogimg.jpg";
+import ReactMarkdown from 'react-markdown'
+import gfm from 'remark-gfm'
+import { BASE_URL } from "../config/url";
+import axios from "axios"
+var arraySort = require('array-sort');
 
 function Blog(){
+
+    var [blogs, setBlogs] = useState([])
+
+    useEffect(() => { 
+        axios.get(`${BASE_URL}/api/blogs?populate=Category&populate=Image`)
+        .then(response => {
+
+            var b = arraySort(response.data.data, "Date_of_Publishing")
+            setBlogs(b.slice(-3).reverse())
+
+        })
+
+    }, [])
+
     return(
         <div className="px-3">
         
         <h4 className="our-blog-heading mb-lg-4 mb-md-4 mb-1">BLOGS</h4>
         <div className="blog row">
-            <div className="col-lg-4 col-md-4 col-12 mt-lg-0 mt-md-0 mt-4">
+            {blogs.map((b)=>(
+                <div className="col-lg-4 col-md-4 col-12 mt-lg-0 mt-md-0 mt-4">
                 <div className="blog-card">
-                    <h6 className="blog-heading">HEADING</h6>
-                    <h6 className="blog-date">DATE: 21-04-2021</h6>
-                    <img src={blogimg} className="blog-img mt-3" alt="blog-1"/>
-                    <p className="blog-summary mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque nunc vel risus rhoncus, a sagittis dolor fermentum. Sed feugiat viverra libero sed semper. Nunc mauris lectus, auctor at vestibulum nec, dictum nec nunc. Nullam sit amet sapien mollis, rhoncus nunc in, hendrerit nulla. Etiam risus lacus, aliquet a pulvinar eu, pretium in velit. Quisque at tristique odio. Sed iaculis est neque, sed volutpat orci commodo vel. Aliquam erat volutpat. Etiam dignissim felis venenatis velit suscipit, non suscipit neque iaculis</p>
-                    <h6 className="blog-tags">#tags</h6>
+                    <h6 className="blog-heading">{b.attributes.Heading}</h6>
+                    <h6 className="blog-date">DATE: {b.attributes.Date_of_Publishing}</h6>
+                    <img src={BASE_URL + b.attributes.Image.data.attributes.url} className="blog-img mt-3" alt="blog-1"/>
+                    <p className="blog-summary mt-3"><ReactMarkdown remarkPlugins={[gfm]}>{(b.attributes.Blog_Content).substring(0,515) + "..."}</ReactMarkdown></p>
+                    <h6 className="blog-tags">{b.attributes.Tag}</h6>
                     <div className="blog-brown1" />
                     <div className="blog-brown2" />
                 </div>
-            </div>
-            <div className="col-lg-4 col-md-4 col-12 mt-lg-0 mt-md-0 mt-4">
-                <div className="blog-card">
-                    <h6 className="blog-heading">HEADING</h6>
-                    <h6 className="blog-date">DATE: 21-04-2021</h6>
-                    <img src={blogimg} className="blog-img mt-3" alt="blog-2"/>
-                    <p className="blog-summary mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque nunc vel risus rhoncus, a sagittis dolor fermentum. Sed feugiat viverra libero sed semper. Nunc mauris lectus, auctor at vestibulum nec, dictum nec nunc. Nullam sit amet sapien mollis, rhoncus nunc in, hendrerit nulla. Etiam risus lacus, aliquet a pulvinar eu, pretium in velit. Quisque at tristique odio. Sed iaculis est neque, sed volutpat orci commodo vel. Aliquam erat volutpat. Etiam dignissim felis venenatis velit suscipit, non suscipit neque iaculis</p>
-                    <h6 className="blog-tags">#tags</h6>
-                    <div className="blog-brown1" />
-                    <div className="blog-brown2" />
                 </div>
-            </div>
-            <div className="col-lg-4 col-md-4 col-12 mt-lg-0 mt-md-0 mt-4">
-                <div className="blog-card">
-                    <h6 className="blog-heading">HEADING</h6>
-                    <h6 className="blog-date">DATE: 21-04-2021</h6>
-                    <img src={blogimg} className="blog-img mt-3" alt="blog-3"/>
-                    <p className="blog-summary mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque nunc vel risus rhoncus, a sagittis dolor fermentum. Sed feugiat viverra libero sed semper. Nunc mauris lectus, auctor at vestibulum nec, dictum nec nunc. Nullam sit amet sapien mollis, rhoncus nunc in, hendrerit nulla. Etiam risus lacus, aliquet a pulvinar eu, pretium in velit. Quisque at tristique odio. Sed iaculis est neque, sed volutpat orci commodo vel. Aliquam erat volutpat. Etiam dignissim felis venenatis velit suscipit, non suscipit neque iaculis</p>                
-                    <h6 className="blog-tags">#tags</h6>
-                    <div className="blog-brown1" />
-                    <div className="blog-brown2" />
-                    </div>
-            </div>
+            ))}
+            
         </div>
         <div className="row justify-content-center mt-3 mb-2">
             <div className="col-lg-4 col-md-4 col-8">

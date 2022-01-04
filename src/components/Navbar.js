@@ -10,7 +10,7 @@ import rightarrow from "../assets/img/rightarrow.png"
 function Navbar(){
 
   useEffect(() => { 
-    console.log(window.screen.width)
+    
     
     if(window.location.href.split("#")[1] === "about"){
       window.scroll(0,0)
