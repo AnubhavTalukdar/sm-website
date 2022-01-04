@@ -1,30 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.96c191cf.chunk.css",
-    "main.js": "/static/js/main.c853c9a8.chunk.js",
-    "main.js.map": "/static/js/main.c853c9a8.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.0974c108.js",
-    "runtime-main.js.map": "/static/js/runtime-main.0974c108.js.map",
-    "static/js/2.2eb1d669.chunk.js": "/static/js/2.2eb1d669.chunk.js",
-    "static/js/2.2eb1d669.chunk.js.map": "/static/js/2.2eb1d669.chunk.js.map",
-    "static/js/3.bb5e9658.chunk.js": "/static/js/3.bb5e9658.chunk.js",
-    "static/js/3.bb5e9658.chunk.js.map": "/static/js/3.bb5e9658.chunk.js.map",
+    "main.css": "/static/css/main.f7f2acca.chunk.css",
+    "main.js": "/static/js/main.cfd31941.chunk.js",
+    "main.js.map": "/static/js/main.cfd31941.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e58184db.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e58184db.js.map",
+    "static/js/2.a88c0ec3.chunk.js": "/static/js/2.a88c0ec3.chunk.js",
+    "static/js/2.a88c0ec3.chunk.js.map": "/static/js/2.a88c0ec3.chunk.js.map",
+    "static/js/3.e5466630.chunk.js": "/static/js/3.e5466630.chunk.js",
+    "static/js/3.e5466630.chunk.js.map": "/static/js/3.e5466630.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.96c191cf.chunk.css.map": "/static/css/main.96c191cf.chunk.css.map",
-    "static/js/2.2eb1d669.chunk.js.LICENSE.txt": "/static/js/2.2eb1d669.chunk.js.LICENSE.txt",
+    "static/css/main.f7f2acca.chunk.css.map": "/static/css/main.f7f2acca.chunk.css.map",
+    "static/js/2.a88c0ec3.chunk.js.LICENSE.txt": "/static/js/2.a88c0ec3.chunk.js.LICENSE.txt",
     "static/media/style.css": "/static/media/background.e50b3248.png",
     "static/media/NotFound.860a6b1b.png": "/static/media/NotFound.860a6b1b.png",
     "static/media/TeamMember.ca549fe2.jpg": "/static/media/TeamMember.ca549fe2.jpg",
     "static/media/billboard.5990c421.png": "/static/media/billboard.5990c421.png",
-    "static/media/blogimg.c0a828fa.jpg": "/static/media/blogimg.c0a828fa.jpg",
     "static/media/dialer.4f4ddbc7.png": "/static/media/dialer.4f4ddbc7.png",
     "static/media/logo.6cecf2ef.png": "/static/media/logo.6cecf2ef.png",
     "static/media/telephone.6e7b3476.png": "/static/media/telephone.6e7b3476.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.0974c108.js",
-    "static/js/2.2eb1d669.chunk.js",
-    "static/css/main.96c191cf.chunk.css",
-    "static/js/main.c853c9a8.chunk.js"
+    "static/js/runtime-main.e58184db.js",
+    "static/js/2.a88c0ec3.chunk.js",
+    "static/css/main.f7f2acca.chunk.css",
+    "static/js/main.cfd31941.chunk.js"
   ]
 }
