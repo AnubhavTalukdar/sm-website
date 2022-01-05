@@ -25,6 +25,7 @@ function CenterSection(){
                 </div>
                 </div> 
             </div>
+            
         </div>
         </>
     );
