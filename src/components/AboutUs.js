@@ -1,13 +1,27 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React,{useEffect, useState} from "react";
 import topleft from "../assets/img/topleft.png";
 import topright from "../assets/img/topright.png";
 import bottomright from "../assets/img/bottomright.png";
 import bottomleft from "../assets/img/bottomleft.png";
 import divider from "../assets/img/divider.png";
+import { BASE_URL } from "../config/url";
+import axios from "axios"
+import ReactMarkdown from 'react-markdown'
+import gfm from 'remark-gfm'
 
 
 function AboutUs(){
+    const [aboutUs, setAboutUs] = useState("");
+
+    useEffect(() => { 
+        axios.get(`${BASE_URL}/api/contact-details-homepages/1`)
+        .then(response => {
+            setAboutUs(response.data.data.attributes.About_Us)
+        })
+
+    }, [])
+
     return(
         <>
         <div className="about-us row">
@@ -17,8 +31,7 @@ function AboutUs(){
             <div className="col-8 py-0 padding-remover">
                 <h4 className="about-us-heading">ABOUT US</h4>
                 <p className="about-us-paragraph1">
-                Lorem ipsum dolor sit amet. Et voluptatem quae qui laboriosam enim sit voluptas natus eum consequatur doloribus ab debitis repudiandae. Ea sapiente nesciunt non quia nihil eos nemo labore est galisum expedita. A galisum quia quo provident autem quo maxime animi. A galisum quia quo provident autem quo maxime animi.
-                Lorem ipsum dolor sit amet. Et voluptatem quae qui laboriosam enim sit voluptas natus eum consequatur doloribus ab debitis repudiandae. Ea sapiente nesciunt non quia nihil eos nemo labore est galisum expedita. A galisum quia quo provident autem quo maxime animi. A galisum quia quo provident autem quo maxime animi.
+                    <ReactMarkdown remarkPlugins={[gfm]}>{aboutUs.substring(0, aboutUs.indexOf("\n"))}</ReactMarkdown>
                 </p>
             </div>
             <div className="col-2 text-right padding-remover">
@@ -29,7 +42,7 @@ function AboutUs(){
             </div>
             <div className="col-8 padding-remover">
             <p className="about-us-paragraph2">
-                Lorem ipsum dolor sit amet. Et voluptatem quae qui laboriosam enim sit voluptas natus eum consequatur doloribus ab debitis repudiandae. Ea sapiente nesciunt non quia nihil eos nemo labore est galisum expedita. A galisum quia quo provident autem quo maxime animi. A galisum quia quo provident autem quo maxime animi.
+                <ReactMarkdown remarkPlugins={[gfm]}>{aboutUs.substring(aboutUs.indexOf("\n"))}</ReactMarkdown>
             </p>
             </div>
             <div className="col-2 mt-auto text-right padding-remover">

@@ -13,6 +13,7 @@ import { BASE_URL } from "../config/url";
 import axios from "axios"
 import ReactMarkdown from 'react-markdown'
 import gfm from 'remark-gfm'
+import Cookies from "js-cookie"
 var arraySort = require('array-sort');
 
 function Blogs(){
@@ -55,6 +56,13 @@ function Blogs(){
         .then(response => {
             setCategories(response.data.data)
         })
+
+        if(Cookies.get("Blog")){
+            setExpanded("panel"+Cookies.get("Blog"))
+            if(window.screen.width > 600){
+                window.scroll(0,300)
+            }
+        }
 
     }, [])
 
@@ -104,13 +112,13 @@ function Blogs(){
                     <div className="box1Btm">
                     <h4 className="team-heading mt-3 mb-4">BLOGS</h4>
                     <div className="row px-4">
-                        <div className="col-lg-8 col-md-8 col-12">
+                        <div className="col-lg-8 col-md-12 col-12">
                             <h4 className="our-blogs-heading pb-3">Our Blogs</h4>
                             <div className="row mb-4">
-                                <div className="col-lg-4 col-sm-none">
+                                <div className="col-lg-4 col-md-4 col-sm-none">
 
                                 </div>
-                                <div className="col-lg-4 col-12 mt-4">
+                                <div className="col-lg-4 col-md-4 col-12 mt-4">
                                     
                                         <InputLabel id="filter">Filter By Category</InputLabel>
                                         <Select
@@ -130,7 +138,7 @@ function Blogs(){
                                     
                                 </div>
                                 
-                                <div className="col-lg-4 col-12 mt-4 pl-lg-0 pl-4">
+                                <div className="col-lg-4 col-md-4 col-12 mt-4 pl-lg-0 pl-4">
                                    
                                         <InputLabel id="sort">Sort By</InputLabel>
                                         <Select
@@ -160,10 +168,10 @@ function Blogs(){
                                             aria-controls="panel4bh-content"
                                             id="panel4bh-header"
                                             >
-                                            <h6 className="accordion-heading">{b.attributes.Title}</h6>
+                                            <h6 className="accordion-heading" style={{color: expanded === 'panel'+b.id ? "black" : "#615646"}}>{b.attributes.Title}</h6>
                                             </AccordionSummary>
                                             <AccordionDetails className="text-center">
-                                            <img src={BASE_URL + b.attributes.Image.data.attributes.url} className="accordion-img" alt="" />     
+                                            <img src={!b.attributes.Image.data ? "" : BASE_URL + b.attributes.Image.data.attributes.url} className="accordion-img" alt="" />     
                                             <p className="accordion-content">
                                                 <ReactMarkdown remarkPlugins={[gfm]}>{b.attributes.Blog_Content}</ReactMarkdown>
                                             </p>
@@ -211,10 +219,10 @@ function Blogs(){
                                             aria-controls="panel4bh-content"
                                             id="panel4bh-header"
                                             >
-                                            <h6 className="accordion-heading">{b.attributes.Title}</h6>
+                                            <h6 className="accordion-heading" style={{color: expanded === 'panel'+b.id ? "black" : "#615646"}}>{b.attributes.Title}</h6>
                                             </AccordionSummary>
                                             <AccordionDetails className="text-center">
-                                            <img src={BASE_URL + b.attributes.Image.data.attributes.url} className="accordion-img" alt="" />     
+                                            <img src={!b.attributes.Image.data ? "" : BASE_URL + b.attributes.Image.data.attributes.url} className="accordion-img" alt="" />     
                                             <p className="accordion-content">
                                             <ReactMarkdown remarkPlugins={[gfm]}>{b.attributes.Blog_Content}</ReactMarkdown>
                                             </p>
@@ -247,7 +255,7 @@ function Blogs(){
                                 
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-4 col-12 mt-lg-0 mt-md-0 mt-5">
+                        <div className="col-lg-4 col-md-12 col-12 mt-lg-0 mt-md-0 mt-5">
                             <h4 className="atw-heading pb-1">Around the web</h4>
                             <div className="row px-2">
                                 {
@@ -262,7 +270,7 @@ function Blogs(){
                                             <p className="atw-site">{a.attributes.WebsiteName}<br /><span className="atw-date">{a.attributes.Date} | {a.attributes.Reading_Time} mins</span></p>
                                         </div>
                                         <div className="col-4">
-                                            <img className="atw-img" src={BASE_URL + a.attributes.Image.data.attributes.url} alt="" />
+                                            <img className="atw-img" src={!a.attributes.Image.data ? "" : BASE_URL + a.attributes.Image.data.attributes.url} alt="" />
                                         </div>
                                     </div>
                                     </a>

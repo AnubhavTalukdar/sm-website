@@ -72,7 +72,36 @@ nav {
     margin-bottom: auto !important;
 }
 
+@media only screen and (max-width: 350px){
+  .nav-logo{
+    display: block;
+    width: 180px !important;
+  }
+}
+
 @media only screen and (max-width: 600px) {
+  .header{
+    display: none;
+  }
+  .black-bar{
+    display: none;
+  }
+  .nav-logo{
+    display: block;
+    width: 200px;
+  }
+  .nav-dot{
+    display: none;
+  }
+  .nav-left{
+    display: none;
+  }
+  .nav-right{
+    display: none;
+  }
+}
+
+@media only screen and (min-width:601px) and (max-width: 900px) {
   .header{
     display: none;
   }
@@ -225,6 +254,16 @@ nav {
   }
 }
 
+@media only screen and (min-width:601px) and (max-width: 900px){
+  .center-section{
+    padding-left: 15px !important;
+  }
+  .box{
+    margin: 0px;
+    width: 100%;
+  }
+}
+
 .box-top-border{
   background: #5E3A16;
   height: 10px;
@@ -239,11 +278,41 @@ nav {
     font-size: 25px !important;
     font-weight: lighter;
     color: white !important;
+    line-height: 9px;
 }
 
+.footer-logo{
+  width: 8%;
+}
+
+.t-padding-remover{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+@media only screen and (max-width: 350px){
+  .footer-text{
+    font-size: 20px !important;
+  }
+  .padding-l-remover{
+    padding-left: 0px !important;
+  }
+}
 @media only screen and (max-width: 600px){
   .footer-text{
-    font-size: 22px !important;
+    font-size: 22px important;
+  }
+}
+
+@media only screen and (min-width:601px) and (max-width: 900px){
+  .footer-text{
+    font-size: 20px !important;
+  }
+  .t-padding-remover{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .footer-logo{
+    width: 10%;
   }
 }
 
@@ -277,7 +346,8 @@ nav {
     font-size: 18px;
     color: #615646;
     text-align:justify;
-    margin-top: -15px;
+    margin-top: -5px;
+    padding-bottom: 15px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -343,6 +413,20 @@ nav {
 .billboard-points{
     font-size: 16px;
     color: #615646;
+    line-height: 10px;
+}
+
+@media only screen and (max-width: 350px){
+  .billboard-writing2{
+    position: absolute;
+    top: 42%;
+    left: 35% !important;
+}
+  .billboard-points{
+  font-size: 10px;
+  text-align: left !important;
+  line-height: 4px !important;
+  }
 }
 
 @media only screen and (max-width: 600px){
@@ -354,14 +438,22 @@ nav {
   }
   .billboard-writing2{
     position: absolute;
-    top: 37%;
-    left: 49%;
+    top: 42%;
+    left: 45%;
 }
   .billboard-points{
-    font-size: 12px;
+    font-size: 10px;
     text-align: left !important;
+    line-height: 6px;
   }
 }
+
+@media only screen and (min-width:601px) and (max-width: 900px){
+  .billboard-img{
+    width: 90%;
+  }
+}
+
 
 .our-blog-heading {
     font-size: 28px;
@@ -380,6 +472,12 @@ nav {
     box-shadow: 14px -14px 10px -7px rgba(0,0,0,0.59);
     -webkit-box-shadow: 14px -14px 10px -7px rgba(0,0,0,0.59);
     -moz-box-shadow: 14px -14px 10px -7px rgba(0,0,0,0.59);
+    color: inherit;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    text-align: left;
 }
 
 .blog-heading{
@@ -401,7 +499,8 @@ nav {
 }
 
 .blog-img {
-    width: 50%;
+    width: 25vh;
+    height: 15vh;
     border-color: #615646;
     border-style: double;
     padding: 5px;
@@ -501,7 +600,11 @@ nav {
   .button:hover .button__vertical {
     transform: scaleY(0);
   }
-  
+@media only screen and (max-width: 350px){
+  .button{
+    font-size: 14px !important;
+  }
+} 
 @media only screen and (max-width: 600px){
   .our-blog-heading{
     font-size: 23px;
@@ -509,7 +612,24 @@ nav {
   .blog-heading{
     font-size: 18px;
   }
+  .blog-img{
+    width: 20vh;
+    height: 12vh;
+  }
 }  
+
+@media only screen and (min-width:601px) and (max-width: 900px){
+  .blog-heading{
+    font-size: 18px;
+  }
+  .blog-summary{
+    font-size: 11.5px;
+  }
+  .blog-img{
+    width: 10vh;
+    height: 7vh;
+  }
+}
 
 /*Testimonials*/
 .testimonials-heading{
@@ -548,8 +668,6 @@ nav {
     animation: animate 15s linear infinite;
     animation-delay: calc(3s * var(--delay));
 }
-
-
 
   .wrapper .card:last-child{
     animation-delay: calc(-3s * var(--delay));
@@ -679,6 +797,20 @@ animation: rotation 3s infinite linear;
   }
 }
 */
+
+@media only screen and (max-width: 350px){
+  .wrapper .card{
+    width: 250px !important;
+  }
+  .dialer{
+    margin-top: -51% !important;
+  }
+  .wrapper {
+    margin-top: 180px !important;
+    margin-bottom: 220px !important;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .testimonials{
     margin-left: -15px !important;
@@ -708,7 +840,17 @@ animation: rotation 3s infinite linear;
     margin-top: -8%;
   }
   .dialer{
-    margin-top: -46%;
+    margin-top: -48%;
+  }
+}
+
+@media only screen and (min-width:601px) and (max-width: 900px){
+  .wrapper {
+    margin-top: 200px;
+    margin-bottom: 250px;
+  }
+  .dialer{
+    margin-top: -47%;
   }
 }
 
@@ -910,6 +1052,35 @@ input {
   margin-top: 130px;
 }
 
+@media only screen and (max-width: 350px){
+  .flip-para{
+    font-size: 10px !important;
+  }
+  .flip-heading{
+    font-size: 13px !important;
+  }
+  .flip-name{
+    font-size: 11px !important;
+    padding: 0px !important;
+  }
+  #cover {
+    width: 200px;
+    height: 190px !important;
+  }
+  .cover-img{
+    width: 200px;
+    height: 190px !important;
+  }
+  .flip-book{
+    width: 200px;
+    height: 190px !important;
+    perspective: 1250px;
+  }
+  .flip-border3{
+    display: none !important;
+  }
+}
+
 @media only screen and (max-width: 600px){
   .team-heading {
     font-size: 23px;
@@ -938,6 +1109,8 @@ input {
   }
   .flip-name{
     font-size: 12px;
+    padding: 0px !important;
+    padding-bottom: 6px !important;
   }
   .flip-para{
     font-size: 11px;
@@ -946,15 +1119,10 @@ input {
     margin-top: -9px;
   }
   .flip-border1{
-    height: 3px;
-    background-color: #615646;
-    margin-top: -5px;
-    margin-bottom: 1px;
+    display: none;
   }
   .flip-border2{
-    height: 1px;
-    background-color: #615646;
-    margin-bottom: 1px;
+    display: none;
   }
   .flip-border3{
     height: 1px;
@@ -980,8 +1148,9 @@ input {
 
 .accordion-heading{
     font-size: 16px;
-    color: #615646;
+    
 }
+
 
 .accordion-content{
     font-size: 16px;
@@ -1011,7 +1180,7 @@ input {
 }
 
 .accordion-img{
-    width: 25%;
+    width: 50%;
     padding-bottom: 2%;
 }
 
@@ -1081,9 +1250,7 @@ input {
   border-bottom: 5px solid transparent;
   border-left: 5px solid #615646;
 }
-.footer-logo{
-  width: 8%;
-}
+
 
 @media only screen and (max-width: 600px){
   .our-blogs-heading{
@@ -1108,8 +1275,8 @@ input {
     font-size: 12px;
   }
   .accordion-img{
-      width: 40%;
-      padding-bottom: 2%;
+      width: 80%;
+      padding-bottom: 5%;
   }
   .footer-logo{
     width: 15%;
@@ -1119,13 +1286,51 @@ input {
 /*Not Found*/
 .not-found{
   width: 50%;
-  margin: 20px;
+  margin: 20px
+}
+
+.additional-bottom{
+  margin-bottom: 0px;
+}
+
+.back-to-home {
+	box-shadow:inset 0px 1px 0px 0px #a6827e;
+	background:linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
+	background-color:#7d5d3b;
+	border-radius:3px;
+	border:1px solid #54381e;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:15px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #4d3534;
+}
+
+.back-to-home:hover {
+	background:linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
+	background-color:#634b30;
+}
+
+.back-to-home:active {
+	position:relative;
+	top:1px;
 }
 
 @media only screen and (max-width: 600px){
   .not-found{
     width: 100%;
     margin: 0px;
+  }
+  .additional-bottom{
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width:601px) and (max-width: 900px){
+  .additional-bottom{
+    margin-bottom: 150px;
   }
 }
 
@@ -1283,5 +1488,36 @@ input {
 @media only screen and (max-width: 600px){
   .back-to-top{
     width: 15%;
+  }
+}
+
+@media only screen and (min-width:601px) and (max-width: 900px){
+  .back-to-top{
+    width: 8%;
+  }
+}
+
+/*Privacy Policy*/
+
+.privacy-policy-card{
+  border-radius: 15px;
+  border: 1px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
+}
+.privacy-policy{
+  font-size: 16px;
+  color:#615646;
+}
+
+@media only screen and (max-width: 600px){
+  .privacy-policy{
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width:601px) and (max-width: 900px){
+  .privacy-policy{
+    font-size: 14px;
   }
 }

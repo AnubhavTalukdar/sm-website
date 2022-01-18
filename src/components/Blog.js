@@ -5,6 +5,7 @@ import ReactMarkdown from 'react-markdown'
 import gfm from 'remark-gfm'
 import { BASE_URL } from "../config/url";
 import axios from "axios"
+import Cookies from "js-cookie"
 var arraySort = require('array-sort');
 
 function Blog(){
@@ -17,7 +18,6 @@ function Blog(){
 
             var b = arraySort(response.data.data, "Date_of_Publishing")
             setBlogs(b.slice(-3).reverse())
-
         })
 
     }, [])
@@ -29,16 +29,19 @@ function Blog(){
         <div className="blog row">
             {blogs.map((b)=>(
                 <div className="col-lg-4 col-md-4 col-12 mt-lg-0 mt-md-0 mt-4">
-                <div className="blog-card">
-                    <h6 className="blog-heading">{b.attributes.Heading}</h6>
-                    <h6 className="blog-date">DATE: {b.attributes.Date_of_Publishing}</h6>
-                    <img src={BASE_URL + b.attributes.Image.data.attributes.url} className="blog-img mt-3" alt="blog-1"/>
+                <a href="/blogs" style={{textDecoration: "none"}} target="_blank" rel="noopener noreferrer">
+                <button className="blog-card" onClick={()=>{Cookies.set("Blog", b.id, {expires : 0.000034})}}>
+                    <h6 className="blog-heading">{b.attributes.Homepage_Card_Heading}</h6>
+                    <h6 className="blog-date">DATE: {b.attributes.Date_of_Publishing} | {b.attributes.Reading_Time} mins read</h6>
+                    <img src={!b.attributes.Image.data ? "" : BASE_URL + b.attributes.Image.data.attributes.url} className="blog-img mt-3" alt="blog-1"/>
                     <p className="blog-summary mt-3"><ReactMarkdown remarkPlugins={[gfm]}>{(b.attributes.Blog_Content).substring(0,515) + "..."}</ReactMarkdown></p>
-                    <h6 className="blog-tags">{b.attributes.Tag}</h6>
+                    <h6 className="blog-tags mt-auto">{b.attributes.Tag}</h6>
                     <div className="blog-brown1" />
                     <div className="blog-brown2" />
+                </button>
+                </a>
                 </div>
-                </div>
+                
             ))}
             
         </div>

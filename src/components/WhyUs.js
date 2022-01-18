@@ -1,10 +1,25 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, {useEffect, useState} from "react";
 import divider from "../assets/img/divider.png";
 import billboard from "../assets/img/billboard.png";
 import marginbottom from "../assets/img/marginbottom.png"
+import ReactMarkdown from 'react-markdown'
+import gfm from 'remark-gfm'
+import { BASE_URL } from "../config/url";
+import axios from "axios"
 
 function WhyUs(){
+    const [whyUs, setWhyUs] = useState("");
+
+    useEffect(() => { 
+        axios.get(`${BASE_URL}/api/contact-details-homepages/1`)
+        .then(response => {
+            setWhyUs(response.data.data.attributes.Why_Us)
+        })
+
+    }, [])
+
+
     return(
         <div className="px-3">
         <div className="why-us row">
@@ -15,21 +30,8 @@ function WhyUs(){
                         <h4 className="why-us-heading">WHY US?</h4>
                     </div>
                     <div className="billboard-writing2">
-                        <div className="d-flex mb-lg-2 mb-md-2 mb-1">
-                            <div className="arrow-right mt-auto mb-auto"></div>
-                            <span className="billboard-points">Lorem ipsum dolor sit amet.</span>
-                        </div>
-                        <div className="d-flex mb-lg-2 mb-md-2 mb-1">
-                            <div className="arrow-right mt-auto mb-auto"></div>
-                            <span className="billboard-points">Lorem ipsum dolor sit amet.</span>
-                        </div>
-                        <div className="d-flex mb-lg-2 mb-md-2 mb-1">
-                            <div className="arrow-right mt-auto mb-auto"></div>
-                            <span className="billboard-points">Lorem ipsum dolor sit amet.</span>
-                        </div>
-                        <div className="d-flex mb-lg-2 mb-md-2 mb-1">
-                            <div className="arrow-right mt-auto mb-auto"></div>
-                            <span className="billboard-points">Lorem ipsum dolor sit amet.</span>
+                        <div className="d-flex">
+                        <span className="billboard-points" style={{textAlign : "left"}}><ReactMarkdown remarkPlugins={[gfm]}>{whyUs}</ReactMarkdown></span>
                         </div>
                     </div>
                 </div>

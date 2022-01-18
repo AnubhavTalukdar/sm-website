@@ -1,16 +1,16 @@
 import React from "react";
-import NotFound from "../components/NotFound.js"
+import Privacy from "../components/Privacy.js"
 import FloatingButton from "../components/FloatingButton.js";
 import BackToTop from "../components/BackToTop.js";
 
-function NotFoundPage(){
+function PrivacyPage(){
     return(
         <>
-        <NotFound />
+        <Privacy />
         <FloatingButton />
         <BackToTop />
         </>
     );
 }
 
-export default NotFoundPage;
+export default PrivacyPage;
