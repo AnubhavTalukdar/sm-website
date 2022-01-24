@@ -70,7 +70,7 @@ function Navbar(){
                 <img classname="mt-3" src={leftarrow} alt="leftarrow" width="80%" />
               </li>
               <li className="nav-item">
-                <a className="nav-link" id="link-1" href="/">Home <span className="nav-dot">&middot;</span></a>
+                <a className="nav-link" id="link-1" href="/" >Home <span className="nav-dot">&middot;</span></a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" id="link-2" href="/#about" onClick={()=>{window.scroll(0,0)}}>About <span className="nav-dot">&middot;</span></a>

@@ -1,7 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, {useEffect, useState} from "react";
 import divider from "../assets/img/divider.png";
-import billboard from "../assets/img/billboard.png";
+import upper from "../assets/img/upper.png";
+import lower from "../assets/img/lower.png";
 import marginbottom from "../assets/img/marginbottom.png"
 import ReactMarkdown from 'react-markdown'
 import gfm from 'remark-gfm'
@@ -23,21 +24,37 @@ function WhyUs(){
     return(
         <div className="px-3">
         <div className="why-us row">
-            <div className="col-12 padding-remover">
+            <div className="col-lg-2 col-md-0 col-sm-0 padding-remover">
+            </div>
+            <div className="col-lg-8 col-md-12 col-sm-12 padding-remover">
                 <div class="img-container">
-                    <img className="billboard-img" src={billboard} alt="" />
-                    <div class="billboard-writing1">
-                        <h4 className="why-us-heading">WHY US?</h4>
-                    </div>
-                    <div className="billboard-writing2">
-                        <div className="d-flex">
-                        <span className="billboard-points" style={{textAlign : "left"}}><ReactMarkdown remarkPlugins={[gfm]}>{whyUs}</ReactMarkdown></span>
-                        </div>
-                    </div>
+                    <img className="billboard-img1" src={upper} alt="" />
                 </div>
             </div>
+            <div className="col-lg-2 col-md-0 col-sm-0 padding-remover">
+            </div>
+            <div className="col-lg-2 col-md-0 col-sm-0 padding-remover">
+            </div>
+            <div className="col-lg-8 col-md-12 col-sm-12 padding-remover">
+                <div className="billboard">
+                    <h6 className="why-us-heading">WHY US?</h6>
+                    <p className="billboard-write-up"><ReactMarkdown remarkPlugins={[gfm]}>{whyUs}</ReactMarkdown></p>
+                </div>
+            </div>
+            <div className="col-lg-2 col-md-0 col-sm-0 padding-remover">
+            </div>
+            <div className="col-lg-2 col-md-0 col-sm-0 padding-remover">
+            </div>
+            <div className="col-lg-8 col-md-12 col-sm-12 padding-remover">
+                <div class="img-container">
+                    <img className="billboard-img2" src={lower} alt="" />
+                </div>
+            </div>
+            <div className="col-lg-2 col-md-0 col-sm-0 padding-remover">
+            </div>
         </div>
-        <div className="why-us row">
+        
+        <div className="why-us row mbw">
             <div className="col-12">
                 <img src={marginbottom} alt="margin-bottom" width="100%" />
             </div>

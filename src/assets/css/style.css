@@ -380,6 +380,8 @@ nav {
     font-size: 28px;
     color: #615646;
     text-align: center;
+    margin-top: -2%;
+    margin-bottom: 2%;
 }
 
 .why-us-paragraph{
@@ -389,68 +391,85 @@ nav {
     text-align: justify;
 }
 
-.billboard-img {
-    width: 60%;
+.billboard-img1 {
+    width: 100%;
 }
 
-.img-container{
-    position: relative;
-    text-align: center;
-    color: white;
+.billboard-img2 {
+  margin-top: -1.5%;
+  width: 100%;
 }
-.billboard-writing1{
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+.billboard {
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: -0.7%;
+    padding: 20px;
+    
 }
-.billboard-writing2{
-    position: absolute;
-    top: 37%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.billboard-points{
+
+.billboard-write-up{
     font-size: 16px;
     color: #615646;
-    line-height: 10px;
+    text-align: justify;
+    margin-bottom: -2%;
 }
 
-@media only screen and (max-width: 350px){
-  .billboard-writing2{
-    position: absolute;
-    top: 42%;
-    left: 35% !important;
+.mbw{
+  margin-top: -2%;
 }
-  .billboard-points{
-  font-size: 10px;
-  text-align: left !important;
-  line-height: 4px !important;
+
+
+
+@media only screen and (max-width: 350px){
+  .billboard {
+    border-left: 1px solid black !important;
+    border-right: 1px solid black !important;
+    margin-left: 5px !important;
+    margin-right: 5px !important;  
   }
+  .billboard-write-up{
+    font-size: 12px;
+    margin-bottom: -5% !important;
+  }
+
 }
 
 @media only screen and (max-width: 600px){
   .why-us-heading{
     font-size: 23px;
+    margin-bottom: 3%;
   }
   .billboard-img{
     width: 100%;
   }
-  .billboard-writing2{
-    position: absolute;
-    top: 42%;
-    left: 45%;
-}
-  .billboard-points{
-    font-size: 10px;
-    text-align: left !important;
-    line-height: 6px;
+  .billboard {
+    border-left: 1.5px solid black !important;
+    border-right: 1.5px solid black !important;
+    margin-left: 5px !important;
+    margin-right: 5px !important; 
   }
+  .billboard-write-up{
+    font-size: 12px;
+    margin-bottom: -5% !important;
+  }
+  .mbw{
+    margin-top: -5%;
+  }
+
 }
 
 @media only screen and (min-width:601px) and (max-width: 900px){
-  .billboard-img{
-    width: 90%;
+  .billboard {
+    border-left: 2px solid black !important;
+    border-right: 2px solid black !important;
+    margin-left: 5px !important;
+    margin-right: 5px !important; 
+  }
+  .billboard-write-up{
+    font-size: 16px;
   }
 }
 
@@ -776,8 +795,8 @@ nav {
 
 
 @keyframes rotation {
-  0%, 11%, 22%, 33%, 44% { transform: rotate(0deg); }
-  55%, 66%, 77%, 88%, 100% { transform: rotate(40deg); }
+  0%, 10%, 20%, 30%, 40%, 50% { transform: rotate(0deg); }
+  60%, 70%, 80%, 90%, 100% { transform: rotate(36deg); }
 }
 .rotate{
 -webkit-animation: rotation 3s infinite linear;

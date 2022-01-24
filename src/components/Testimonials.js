@@ -1,12 +1,24 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
-import teammember from "../assets/img/TeamMember.jpg";
+import React, {useEffect, useState} from "react";
 import telephone from "../assets/img/telephone.png"
 import dialer from "../assets/img/dialer.png";
 import divider from "../assets/img/divider.png";
 import marginbottom from "../assets/img/marginbottom.png"
+import { BASE_URL } from "../config/url";
+import axios from "axios"
 
 function Testimonials(){
+
+    var [testimonials, setTestimonials] = useState([])
+
+    useEffect(() => { 
+        axios.get(`${BASE_URL}/api/testimonials?populate=Image`)
+        .then(response => {
+            setTestimonials(response.data.data)
+        })
+
+    }, [])
+
     return(
         <div className="px-3">
         <h4 className="testimonials-heading">TESTIMONIALS</h4>
@@ -14,51 +26,59 @@ function Testimonials(){
             <div className="col-lg-3 col-md-4 col-12 pt-5">
             <div className="wrapper">
                 <div className="outer">
-                <div className="card" style={{"--delay": -1}}>
-                    <div className="content">
-                    <div className="img"><img src={teammember} alt="team-member1" /></div>
-                    <div className="details">
-                        <span className="name">Sumit Kapoor</span>
-                        <p className="testimonial">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus facilisis sapien."</p>
-                    </div>
-                    </div>
-                </div>
-                <div className="card" style={{"--delay": 0}}>
-                    <div className="content">
-                    <div className="img"><img src={teammember} alt="team-member2" /></div>
-                    <div className="details">
-                        <span className="name">Andrew Neil</span>
-                        <p className="testimonial">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus facilisis sapien."</p>
-                    </div>
-                    </div>
-                </div>
-                <div className="card" style={{"--delay": 1}}>
-                    <div className="content">
-                    <div className="img"><img src={teammember} alt="team-member3" /></div>
-                    <div className="details">
-                        <span className="name">Jasmine Carter</span>
-                        <p className="testimonial">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus facilisis sapien."</p>
-                    </div>
-                    </div>
-                </div>
-                <div className="card" style={{"--delay": 2}}>
-                    <div className="content">
-                    <div className="img"><img src={teammember} alt="team-member4" /></div>
-                    <div className="details">
-                        <span className="name">Justin Chung</span>
-                        <p className="testimonial">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus facilisis sapien."</p>
-                    </div>
-                    </div>
-                </div>
-                <div className="card" style={{"--delay": 2}}>
-                    <div className="content">
-                    <div className="img"><img src={teammember} alt="team-member5" /></div>
-                    <div className="details">
-                        <span className="name">Adrina Calvo</span>
-                        <p className="testimonial">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus facilisis sapien."</p>
-                    </div>
-                    </div>
-                </div>
+                {
+                    testimonials.map((t, index) =>(
+                        
+                            index === 0 ?
+                            <>
+                            <div className="card" style={{"--delay": -1}}>
+                            <div className="content">
+                            <div className="img"><img src={!t.attributes.Image.data ? "" : BASE_URL + t.attributes.Image.data.attributes.url} alt="team-member1" /></div>
+                            <div className="details">
+                                <span className="name">{t.attributes.Name}</span>
+                                <p className="testimonial">{t.attributes.Testimonial}</p>
+                            </div>
+                            </div>
+                            </div>
+                            </>
+                            :
+                            index === 1 ?
+                            <>
+                            <div className="card" style={{"--delay": 0}}>
+                                <div className="content">
+                                <div className="img"><img src={!t.attributes.Image.data ? "" : BASE_URL + t.attributes.Image.data.attributes.url} alt="team-member2" /></div>
+                                <div className="details">
+                                    <span className="name">{t.attributes.Name}</span>
+                                    <p className="testimonial">{t.attributes.Testimonial}</p>
+                                </div>
+                                </div>
+                            </div>
+                            </>
+                            : 
+                            index === 2 ?
+                            <div className="card" style={{"--delay": 1}}>
+                                <div className="content">
+                                <div className="img"><img src={!t.attributes.Image.data ? "" : BASE_URL + t.attributes.Image.data.attributes.url} alt="team-member3" /></div>
+                                <div className="details">
+                                    <span className="name">{t.attributes.Name}</span>
+                                    <p className="testimonial">{t.attributes.Testimonial}</p>
+                                </div>
+                                </div>
+                            </div>
+                            :
+                            <>
+                             <div className="card" style={{"--delay": 2}}>
+                                <div className="content">
+                                <div className="img"><img src={!t.attributes.Image.data ? "" : BASE_URL + t.attributes.Image.data.attributes.url} alt="team-member4" /></div>
+                                <div className="details">
+                                    <span className="name">{t.attributes.Name}</span>
+                                    <p className="testimonial">{t.attributes.Testimonial}</p>
+                                </div>
+                                </div>
+                            </div>
+                            </>
+                    ))
+                }
                 </div>
             </div>
             </div>
