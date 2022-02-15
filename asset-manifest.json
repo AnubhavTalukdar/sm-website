@@ -1,20 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.a265439c.chunk.css",
-    "main.js": "/static/js/main.d2a5dacc.chunk.js",
-    "main.js.map": "/static/js/main.d2a5dacc.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.3fc73a66.js",
-    "runtime-main.js.map": "/static/js/runtime-main.3fc73a66.js.map",
-    "static/js/2.aacef3a4.chunk.js": "/static/js/2.aacef3a4.chunk.js",
-    "static/js/2.aacef3a4.chunk.js.map": "/static/js/2.aacef3a4.chunk.js.map",
-    "static/js/3.fa41996f.chunk.js": "/static/js/3.fa41996f.chunk.js",
-    "static/js/3.fa41996f.chunk.js.map": "/static/js/3.fa41996f.chunk.js.map",
+    "main.css": "/static/css/main.fea44fb9.chunk.css",
+    "main.js": "/static/js/main.c1001b14.chunk.js",
+    "main.js.map": "/static/js/main.c1001b14.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5d577614.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5d577614.js.map",
+    "static/js/2.e58a312c.chunk.js": "/static/js/2.e58a312c.chunk.js",
+    "static/js/2.e58a312c.chunk.js.map": "/static/js/2.e58a312c.chunk.js.map",
+    "static/js/3.ab50a37f.chunk.js": "/static/js/3.ab50a37f.chunk.js",
+    "static/js/3.ab50a37f.chunk.js.map": "/static/js/3.ab50a37f.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.a265439c.chunk.css.map": "/static/css/main.a265439c.chunk.css.map",
-    "static/js/2.aacef3a4.chunk.js.LICENSE.txt": "/static/js/2.aacef3a4.chunk.js.LICENSE.txt",
+    "static/css/main.fea44fb9.chunk.css.map": "/static/css/main.fea44fb9.chunk.css.map",
+    "static/js/2.e58a312c.chunk.js.LICENSE.txt": "/static/js/2.e58a312c.chunk.js.LICENSE.txt",
     "static/media/style.css": "/static/media/background.e50b3248.png",
     "static/media/NotFound.860a6b1b.png": "/static/media/NotFound.860a6b1b.png",
-    "static/media/TeamMember.ca549fe2.jpg": "/static/media/TeamMember.ca549fe2.jpg",
     "static/media/backtotop.802cc151.png": "/static/media/backtotop.802cc151.png",
     "static/media/dialer.274c715e.png": "/static/media/dialer.274c715e.png",
     "static/media/logo.6cecf2ef.png": "/static/media/logo.6cecf2ef.png",
@@ -22,9 +21,9 @@
     "static/media/telephone.6e7b3476.png": "/static/media/telephone.6e7b3476.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.3fc73a66.js",
-    "static/js/2.aacef3a4.chunk.js",
-    "static/css/main.a265439c.chunk.css",
-    "static/js/main.d2a5dacc.chunk.js"
+    "static/js/runtime-main.5d577614.js",
+    "static/js/2.e58a312c.chunk.js",
+    "static/css/main.fea44fb9.chunk.css",
+    "static/js/main.c1001b14.chunk.js"
   ]
 }
