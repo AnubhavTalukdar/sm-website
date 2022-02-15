@@ -8,13 +8,13 @@ import axios from "axios"
 import ReactMarkdown from 'react-markdown'
 import gfm from 'remark-gfm'
 
-function Privacy(){
-    const [privacyPolicy, setPrivacyPolicy] = useState("")
+function TnC(){
+    const [tnc, setTnc] = useState("")
 
     useEffect(() => { 
         axios.get(`${BASE_URL}/api/contact-details-homepages/1`)
         .then(response => {
-            setPrivacyPolicy(response.data.data.attributes.Privacy_Policy)
+            setTnc(response.data.data.attributes.Terms_And_Conditions)
         })
     }, [])
 
@@ -27,11 +27,11 @@ function Privacy(){
                 <div className="box1">
                     <div className="box1Btm">
                         <div className="row mt-3 mb-1">
-                            <h4 className="our-blog-heading mb-2">PRIVACY POLICY</h4>
+                            <h4 className="our-blog-heading mb-2">TERMS AND CONDITIONS</h4>
                         </div>
                         <div className="row mt-2 mb-4 px-5">
                             <div className="col-12 px-lg-5 px-md-5 px-3 py-4 privacy-policy-card">
-                                <p className="privacy-policy"><ReactMarkdown remarkPlugins={[gfm]}>{privacyPolicy}</ReactMarkdown></p>
+                                <p className="privacy-policy"><ReactMarkdown remarkPlugins={[gfm]}>{tnc}</ReactMarkdown></p>
                             </div>
                         </div>
                         <div className="container-fluid text-center mt-5">
@@ -49,4 +49,4 @@ function Privacy(){
     );
 }
 
-export default Privacy;
+export default TnC;

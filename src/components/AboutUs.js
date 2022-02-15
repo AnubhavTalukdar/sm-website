@@ -49,7 +49,7 @@ function AboutUs(){
                 <img src={bottomright} alt="bottomright" width="100%" />
             </div>
         </div>
-        <div className="container-fluid text-center mt-5" >
+        <div className="container-fluid text-center mt-5">
             <img src={divider} alt="divider-1" width="40%" />
         </div>
         <br/>

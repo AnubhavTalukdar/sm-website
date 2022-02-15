@@ -1,0 +1,449 @@
+  #p1{
+    z-index: 50;
+  }
+  
+  #p2{
+    z-index: 49;
+  }
+  
+  #p3{
+    z-index: 48;
+  }
+  
+  #p4{
+    z-index: 47;
+  }
+
+  #p5{
+    z-index: 46;
+  }
+
+  #p6{
+    z-index: 45;
+  }
+  
+  #p7{
+    z-index: 44;
+  }
+  
+  #p8{
+    z-index: 43;
+  }
+  
+  #p9{
+    z-index: 42;
+  }
+
+  #p10{
+    z-index: 41;
+  }
+
+  #p11{
+    z-index: 40;
+  }
+  
+  #p12{
+    z-index: 39;
+  }
+  
+  #p13{
+    z-index: 38;
+  }
+  
+  #p14{
+    z-index: 37;
+  }
+
+  #p15{
+    z-index: 36;
+  }
+
+  #p16{
+    z-index: 35;
+  }
+  
+  #p17{
+    z-index: 34;
+  }
+  
+  #p18{
+    z-index: 33;
+  }
+  
+  #p19{
+    z-index: 32;
+  }
+
+  #p20{
+    z-index: 31;
+  }
+
+  #p21{
+    z-index: 30;
+  }
+
+  #p22{
+    z-index: 29;
+  }
+
+  #p23{
+    z-index: 28;
+  }
+
+  #p24{
+    z-index: 27;
+  }
+
+  #p25{
+    z-index: 26;
+  }
+
+  #p26{
+    z-index: 25;
+  }
+
+  #p27{
+    z-index: 24;
+  }
+
+  #p28{
+    z-index: 23;
+  }
+
+  #p29{
+    z-index: 22;
+  }
+
+  #p30{
+    z-index: 21;
+  }
+
+  #p31{
+    z-index: 20;
+  }
+
+  #p32{
+    z-index: 19;
+  }
+
+  #p33{
+    z-index: 18;
+  }
+
+  #p34{
+    z-index: 17;
+  }
+
+  #p35{
+    z-index: 16;
+  }
+
+  #p36{
+    z-index: 15;
+  }
+
+  #p37{
+    z-index: 14;
+  }
+
+  #p38{
+    z-index: 13;
+  }
+
+  #p39{
+    z-index: 12;
+  }
+
+  #p40{
+    z-index: 11;
+  }
+
+  #p41{
+    z-index: 10;
+  }
+
+  #p42{
+    z-index: 9;
+  }
+
+  #p43{
+    z-index: 8;
+  }
+
+  #p44{
+    z-index: 7;
+  }
+
+  #p45{
+    z-index: 6;
+  }
+
+  #p46{
+    z-index: 5;
+  }
+
+  #p47{
+    z-index: 4;
+  }
+
+  #p48{
+    z-index: 3;
+  }
+
+  #p49{
+    z-index: 2;
+  }
+
+  #p50{
+    z-index: 1;
+  }
+  
+  #c1:checked ~ .flip-book #p1{
+    transform: rotateY(-180deg);
+    z-index: 1;
+  }
+  
+  #c2:checked ~ .flip-book #p2{
+    transform: rotateY(-180deg);
+    z-index: 2;
+  }
+  
+  #c3:checked ~ .flip-book #p3{
+    transform: rotateY(-180deg);
+    z-index: 3;
+  }
+  
+  #c4:checked ~ .flip-book #p4{
+    transform: rotateY(-180deg);
+    z-index: 4;
+  }
+
+  #c5:checked ~ .flip-book #p5{
+    transform: rotateY(-180deg);
+    z-index: 5;
+  }
+
+  #c6:checked ~ .flip-book #p6{
+    transform: rotateY(-180deg);
+    z-index: 6;
+  }
+
+  #c7:checked ~ .flip-book #p7{
+    transform: rotateY(-180deg);
+    z-index: 7;
+  }
+
+  #c8:checked ~ .flip-book #p8{
+    transform: rotateY(-180deg);
+    z-index: 8;
+  }
+
+  #c9:checked ~ .flip-book #p9{
+    transform: rotateY(-180deg);
+    z-index: 9;
+  }
+
+  #c10:checked ~ .flip-book #p10{
+    transform: rotateY(-180deg);
+    z-index: 10;
+  }
+
+  #c11:checked ~ .flip-book #p11{
+    transform: rotateY(-180deg);
+    z-index: 11;
+  }
+
+  #c12:checked ~ .flip-book #p12{
+    transform: rotateY(-180deg);
+    z-index: 12;
+  }
+
+  #c13:checked ~ .flip-book #p13{
+    transform: rotateY(-180deg);
+    z-index: 13;
+  }
+
+  #c14:checked ~ .flip-book #p14{
+    transform: rotateY(-180deg);
+    z-index: 14;
+  }
+
+  #c15:checked ~ .flip-book #p15{
+    transform: rotateY(-180deg);
+    z-index: 15;
+  }
+
+  #c16:checked ~ .flip-book #p16{
+    transform: rotateY(-180deg);
+    z-index: 16;
+  }
+
+  #c17:checked ~ .flip-book #p17{
+    transform: rotateY(-180deg);
+    z-index: 17;
+  }
+
+  #c18:checked ~ .flip-book #p18{
+    transform: rotateY(-180deg);
+    z-index: 18;
+  }
+
+  #c19:checked ~ .flip-book #p19{
+    transform: rotateY(-180deg);
+    z-index: 19;
+  }
+
+  #c20:checked ~ .flip-book #p20{
+    transform: rotateY(-180deg);
+    z-index: 20;
+  }
+
+  #c21:checked ~ .flip-book #p21{
+    transform: rotateY(-180deg);
+    z-index: 21;
+  }
+
+  #c22:checked ~ .flip-book #p22{
+    transform: rotateY(-180deg);
+    z-index: 22;
+  }
+
+  #c23:checked ~ .flip-book #p23{
+    transform: rotateY(-180deg);
+    z-index: 23;
+  }
+
+  #c24:checked ~ .flip-book #p24{
+    transform: rotateY(-180deg);
+    z-index: 24;
+  }
+
+  #c25:checked ~ .flip-book #p25{
+    transform: rotateY(-180deg);
+    z-index: 25;
+  }
+
+  #c26:checked ~ .flip-book #p26{
+    transform: rotateY(-180deg);
+    z-index: 26;
+  }
+
+  #c27:checked ~ .flip-book #p27{
+    transform: rotateY(-180deg);
+    z-index: 27;
+  }
+
+  #c28:checked ~ .flip-book #p28{
+    transform: rotateY(-180deg);
+    z-index: 28;
+  }
+
+  #c29:checked ~ .flip-book #p29{
+    transform: rotateY(-180deg);
+    z-index: 29;
+  }
+
+  #c30:checked ~ .flip-book #p30{
+    transform: rotateY(-180deg);
+    z-index: 30;
+  }
+
+  #c31:checked ~ .flip-book #p31{
+    transform: rotateY(-180deg);
+    z-index: 31;
+  }
+
+  #c32:checked ~ .flip-book #p32{
+    transform: rotateY(-180deg);
+    z-index: 32;
+  }
+
+  #c33:checked ~ .flip-book #p33{
+    transform: rotateY(-180deg);
+    z-index: 33;
+  }
+
+  #c34:checked ~ .flip-book #p34{
+    transform: rotateY(-180deg);
+    z-index: 34;
+  }
+
+  #c35:checked ~ .flip-book #p35{
+    transform: rotateY(-180deg);
+    z-index: 35;
+  }
+
+  #c36:checked ~ .flip-book #p36{
+    transform: rotateY(-180deg);
+    z-index: 36;
+  }
+
+  #c37:checked ~ .flip-book #p37{
+    transform: rotateY(-180deg);
+    z-index: 37;
+  }
+
+  #c38:checked ~ .flip-book #p38{
+    transform: rotateY(-180deg);
+    z-index: 38;
+  }
+
+  #c39:checked ~ .flip-book #p39{
+    transform: rotateY(-180deg);
+    z-index: 39;
+  }
+
+  #c40:checked ~ .flip-book #p40{
+    transform: rotateY(-180deg);
+    z-index: 40;
+  }
+
+  #c41:checked ~ .flip-book #p41{
+    transform: rotateY(-180deg);
+    z-index: 41;
+  }
+
+  #c42:checked ~ .flip-book #p42{
+    transform: rotateY(-180deg);
+    z-index: 42;
+  }
+
+  #c43:checked ~ .flip-book #p43{
+    transform: rotateY(-180deg);
+    z-index: 43;
+  }
+
+  #c44:checked ~ .flip-book #p44{
+    transform: rotateY(-180deg);
+    z-index: 44;
+  }
+
+  #c45:checked ~ .flip-book #p45{
+    transform: rotateY(-180deg);
+    z-index: 45;
+  }
+
+  #c46:checked ~ .flip-book #p46{
+    transform: rotateY(-180deg);
+    z-index: 46;
+  }
+
+  #c47:checked ~ .flip-book #p47{
+    transform: rotateY(-180deg);
+    z-index: 47;
+  }
+
+  #c48:checked ~ .flip-book #p48{
+    transform: rotateY(-180deg);
+    z-index: 48;
+  }
+
+  #c49:checked ~ .flip-book #p49{
+    transform: rotateY(-180deg);
+    z-index: 49;
+  }
+
+  #c50:checked ~ .flip-book #p50{
+    transform: rotateY(-180deg);
+    z-index: 50;
+  }

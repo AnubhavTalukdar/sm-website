@@ -7,8 +7,7 @@ import title from "../assets/img/title.png"
 import leftarrow from "../assets/img/leftarrow.png"
 import rightarrow from "../assets/img/rightarrow.png"
 
-function Navbar(){
-
+function Navbar2(){
 
   useEffect(() => { 
     
@@ -64,7 +63,7 @@ function Navbar(){
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-
+           
             <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav mx-auto pr-3">
               <li className="nav-left">
@@ -74,22 +73,22 @@ function Navbar(){
                 <a className="nav-link" id="link-1" href="/" >Home <span className="nav-dot">&middot;</span></a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" id="link-2" href="/#about" onClick={()=>{window.scroll(0,0); window.location.href = "#about"}} data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" >About <span className="nav-dot">&middot;</span></a>
+                <a className="nav-link" id="link-2" href="/#about" onClick={()=>{window.scroll(0,0)}}>About <span className="nav-dot">&middot;</span></a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" id="link-3" href="/#testimonials" onClick={()=>{if(window.screen.width < 600){window.scroll(0,800)} else {window.scroll(0,800)} window.location.href = "#testimonials"}} data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Te$timonial$ <span className="nav-dot">&middot;</span></a>
+                <a className="nav-link" id="link-3" href="/#testimonials" onClick={()=>{if(window.screen.width < 600){window.scroll(0,1400)} else {window.scroll(0,800)}}}>Te$timonial$ <span className="nav-dot">&middot;</span></a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" id="link-4" href="/#why" onClick={()=>{if(window.screen.width < 600){window.scroll(0,1500); window.location.href = "#why"} else {window.scroll(0,1500)}}} data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Why U$ <span className="nav-dot">&middot;</span></a>
+                <a className="nav-link" id="link-4" href="/#why" onClick={()=>{if(window.screen.width < 600){window.scroll(0,2000)} else {window.scroll(0,1500)}}}>Why U$ <span className="nav-dot">&middot;</span></a>
               </li>
               <li className="nav-item ">
-                <a className="nav-link" id="link-6" href="/#team" onClick={()=>{if(window.screen.width < 600){window.scroll(0,2000)} else {window.scroll(0,2250)} window.location.href = "#team"}} data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Team <span className="nav-dot">&middot;</span></a>
+                <a className="nav-link" id="link-6" href="/#team" onClick={()=>{if(window.screen.width < 600){window.scroll(0,2500)} else {window.scroll(0,2250)}}}>Team <span className="nav-dot">&middot;</span></a>
               </li>
               <li className="nav-item pr-2">
-                <a className="nav-link" id="link-7" href="/#blog" onClick={()=>{if(window.screen.width < 600){window.scroll(0,2500)} else {window.scroll(0,2800)} window.location.href = "#blog"}} data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Blog <span className="nav-dot">&middot;</span></a>
+                <a className="nav-link" id="link-7" href="/#blog" onClick={()=>{if(window.screen.width < 600){window.scroll(0,3000)} else {window.scroll(0,2800)}}}>Blog <span className="nav-dot">&middot;</span></a>
               </li>
               <li className="nav-item pr-2">
-                <a className="nav-link" id="link-8" href="/#contactus" onClick={()=>{window.scrollTo(0,document.body.scrollHeight); window.location.href = "#contactus"}} data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Contact U$ </a>
+                <a className="nav-link" id="link-8" href="/#contactus" onClick={()=>{window.scrollTo(0,document.body.scrollHeight)}}>Contact U$ </a>
               </li>
               <li className="nav-right">
                 <img src={rightarrow} alt="leftarrow" width="80%" />
@@ -102,4 +101,4 @@ function Navbar(){
     )
 }
 
-export default Navbar;
+export default Navbar2;

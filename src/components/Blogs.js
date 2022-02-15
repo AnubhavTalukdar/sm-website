@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import Navbar from "./Navbar"
+import Navbar2 from "./Navbar2"
 import Footer from "./Footer"
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -104,7 +104,7 @@ function Blogs(){
 
     return(
         <>
-        <Navbar />
+        <Navbar2 />
         <div className="center-section py-5 container-fluid bg-newspaper" >
             <div className="box">
                 <div className="boxBtm">

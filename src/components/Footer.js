@@ -36,7 +36,7 @@ function Footer() {
                     <a className="footer-text" href="/privacypolicy" style={{textDecoration: "none"}}><img src={legalicon} alt="phone-icon" width="100%" /></a>
                 </div>
                 <div className="col-lg-3 col-md-3 col-10 mt-auto mb-auto t-padding-remover">
-                    <a className="footer-text" href="/privacypolicy" style={{textDecoration: "none"}}>LEGAL : {key}</a>
+                    <a className="footer-text" style={{textDecoration: "none"}}>LEGAL : {key}</a>
                 </div>
                 <div className="col-lg-1 col-md-1 col-2 pb-1 padding-l-remover">
                     <a className="footer-text" href={"tel:"+phone} style={{textDecoration: "none"}}><img src={phoneicon} alt="phone-icon" width="100%" /></a>
@@ -55,6 +55,9 @@ function Footer() {
                 <div className="col-12 text-center">
                     <img src={logo} className="footer-logo" alt=""/>
                     <h6 className="footer-text mt-3"><ReactMarkdown remarkPlugins={[gfm]}>{message}</ReactMarkdown></h6>
+                </div>
+                <div className="col-12 mt-3 text-center">
+                    <div className="footer-anchors"><a href="/privacypolicy" target="_blank" rel="noopener noreferrer" className="footer-anchor">PRIVACY POLICY</a> &middot; <a href="/tnc" target="_blank" rel="noopener noreferrer" className="footer-anchor">TERMS AND CONDITIONS</a></div>
                 </div>
             </div>
         </div>

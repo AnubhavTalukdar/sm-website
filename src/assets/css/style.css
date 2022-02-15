@@ -289,6 +289,28 @@ nav {
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
+
+.footer-anchors{
+  color: white;
+}
+
+
+.footer-anchor{
+  font-family: furgatorio !important;
+  font-size: 20px !important;
+  font-weight: lighter;
+  color: white !important;
+  line-height: 9px;
+  text-decoration: none;
+}
+
+.footer-anchor:hover{
+  color: gray !important;
+}
+
+a{
+  text-decoration: none;
+}
 @media only screen and (max-width: 350px){
   .footer-text{
     font-size: 20px !important;
@@ -989,33 +1011,6 @@ input {
   color: #fff;
 }
 
-#p1{
-  z-index: 3;
-}
-
-#p2{
-  z-index: 2;
-}
-
-#p3{
-  z-index: 1;
-}
-
-#c1:checked ~ .flip-book #p1{
-  transform: rotateY(-180deg);
-  z-index: 1;
-}
-
-#c2:checked ~ .flip-book #p2{
-  transform: rotateY(-180deg);
-  z-index: 2;
-}
-
-#c3:checked ~ .flip-book #p3{
-  transform: rotateY(-180deg);
-  z-index: 3;
-}
-
 .flip-heading{
     font-size: 24px;
     text-align: center;
@@ -1538,5 +1533,31 @@ input {
 @media only screen and (min-width:601px) and (max-width: 900px){
   .privacy-policy{
     font-size: 14px;
+  }
+}
+
+.desk-nav{
+  visibility: visible;
+}
+
+.mob-nav{
+  display: none;
+}
+
+@media only screen and (max-width: 600px){
+  .desk-nav{
+    display: none;
+  }
+  .mob-nav{
+    visibility: visible;
+  }
+}
+
+@media only screen and (min-width:601px) and (max-width: 900px){
+  .desk-nav{
+    display: none;
+  }
+  .mob-nav{
+    visibility: visible;
   }
 }

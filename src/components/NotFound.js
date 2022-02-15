@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./Navbar"
+import Navbar2 from "./Navbar2"
 import Footer from "./Footer"
 import NF from "../assets/img/NotFound.png";
 import divider from "../assets/img/divider.png";
@@ -7,7 +7,7 @@ import divider from "../assets/img/divider.png";
 function NotFound(){
     return(
         <>
-        <Navbar />
+        <Navbar2 />
         <div className="center-section py-5 container-fluid bg-newspaper" >
             <div className="box additional-bottom">
                 <div className="boxBtm">
