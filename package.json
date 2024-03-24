@@ -1,5 +1,5 @@
 {
-  "homepage": "https://anubhavtalukdar.github.io/",
+  "homepage": "https://anubhavtalukdar.github.io/sm-website",
   "name": "stock-mentor",
   "version": "0.1.0",
   "private": true,
@@ -15,7 +15,6 @@
     "@testing-library/user-event": "^12.1.10",
     "array-sort": "^1.0.0",
     "axios": "^0.24.0",
-    "gh-pages": "^3.2.3",
     "js-cookie": "^3.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -52,6 +51,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "webpack": "^4.44.2"
   }
 }
